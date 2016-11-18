@@ -1,0 +1,34 @@
+// ===============================
+// Peachy Grid Config
+// ===============================
+
+// Gutters
+$side-gutter: 10px;
+$top-gutter: 0;
+$bottom-gutter: 40px;
+
+
+// Column Sizes
+$full: calc(100% - (#{$side-gutter} * 2));
+$half: calc(50% - (#{$side-gutter} * 2));
+$two-third: calc(66.66666% - (#{$side-gutter} * 2));
+$third: calc(33.33333% - (#{$side-gutter} * 2));
+$quarter: calc(25% - (#{$side-gutter} * 2));
+$fifth: calc(20% - (#{$side-gutter} * 2));
+
+
+// .no-gutter Column Sizes
+$full-no-gutter: 100%;
+$half-no-gutter: 50%;
+$two-third-no-gutter: 66.66666%;
+$third-no-gutter: 33.33333%;
+$quarter-no-gutter: 25%;
+$fifth-no-gutter: 20%;
+
+
+// Breakpoints
+$breakpoint-s: 400px;
+$breakpoint-m: 640px;
+$breakpoint-l: 960px;
+$breakpoint-xl: 1024px;
+$breakpoint-xxl: 1600px;

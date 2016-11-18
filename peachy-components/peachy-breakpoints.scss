@@ -1,0 +1,65 @@
+// ===============================
+// Peachy Breakpoints
+// ===============================
+
+// S Breakpoint
+@media (min-width: $breakpoint-s) {
+  .bp-s-1 { width: $full; }
+  .bp-s-2 { width: $half; }
+  .bp-s-2-3 { width: $two-third; }
+  .bp-s-3 { width: $third; }
+  .bp-s-4 { width: $quarter; }
+  .bp-s-5 { width: $fifth; }
+  .bp-s-hide { display: none; }
+
+
+  // no-gutter scoped breakpoint
+  .no-gutter {
+
+  }
+}
+
+// M Breakpoint
+@media (min-width: $breakpoint-m) {
+  .bp-m-1 { width: $full; }
+  .bp-m-2 { width: $half; }
+  .bp-m-2-3 { width: $two-third; }
+  .bp-m-3 { width: $third; }
+  .bp-m-4 { width: $quarter; }
+  .bp-m-5 { width: $fifth; }
+  .bp-m-hide { display: none; }
+}
+
+// L Breakpoint
+@media (min-width: $breakpoint-l) {
+  .bp-l-1 { width: $full; }
+  .bp-l-2 { width: $half; }
+  .bp-l-2-3 { width: $two-third; }
+  .bp-l-3 { width: $third; }
+  .bp-l-4 { width: $quarter; }
+  .bp-l-5 { width: $fifth; }
+  .bp-l-hide { display: none; }
+}
+
+
+// XL Breakpoint
+@media (min-width: $breakpoint-xl) {
+  .bp-xl-1 { width: $full; }
+  .bp-xl-2 { width: $half; }
+  .bp-xl-2-3 { width: $two-third; }
+  .bp-xl-3 { width: $third; }
+  .bp-xl-4 { width: $quarter; }
+  .bp-xl-5 { width: $fifth; }
+  .bp-xl-hide { display: none; }
+}
+
+// XXL Breakpoint
+@media (min-width: $breakpoint-xxl) {
+  .bp-xxl-1 { width: $full; }
+  .bp-xxl-2 { width: $half; }
+  .bp-xxl-2-3 { width: $two-third; }
+  .bp-xxl-3 { width: $third; }
+  .bp-xxl-4 { width: $quarter; }
+  .bp-xxl-5 { width: $fifth; }
+  .bp-xxl-hide { display: none; }
+}

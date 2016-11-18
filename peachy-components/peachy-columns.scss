@@ -1,0 +1,38 @@
+// ===============================
+// Peachy Columns
+// ===============================
+
+
+// 
+.row {
+  position: relative;
+  width: 100%;
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+[class*="col-"] {
+  position: relative;
+  margin: $top-gutter $side-gutter $bottom-gutter;
+  padding: 20px;
+  min-height: 200px;
+  background: #5a5a5a;
+  float: left;
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+
+// Column Sizes
+.col-1 { width: $full; }
+.col-2 { width: $half; }
+.col-2-3 { width: $two-third; }
+.col-3 { width: $third; }
+.col-4 { width: $quarter; }
+.col-5 { width: $fifth; }
