@@ -6,8 +6,8 @@
   [class*="col-"] {
     // Change the background color of Nested Columns
     [class*="col-"] {
-      background: #333;
-      color: #fff;
+      background: $light-peach;
+      color: $white;
     }
 
     // Show Breakpoint Flag on Hover
@@ -20,8 +20,8 @@
       top: 0;
       left: 0;
       padding: 5px;
-      color: #ffffff;
-      background: #bad;
+      color: $white;
+      background: $peach;
       opacity: 0.5;
       clear: both;
       transition: opacity 0.3s;
@@ -32,7 +32,7 @@
   .col-space {
     visibility: visible;
     background: transparent;
-    border: 3px dashed #5a5a5a;
+    border: 3px dashed $peach;
   }
 
   // Display the Current Breakpoint in Debug Mode

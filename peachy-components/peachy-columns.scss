@@ -3,7 +3,7 @@
 // ===============================
 
 
-// 
+//
 .row {
   position: relative;
   width: 100%;
@@ -18,14 +18,18 @@
   position: relative;
   margin: $top-gutter $side-gutter $bottom-gutter;
   padding: 20px;
-  min-height: 200px;
-  background: #5a5a5a;
+  min-height: 20px;
   float: left;
   &::after {
     content: '';
     display: table;
     clear: both;
   }
+}
+
+// Add .colored-columns to a row to add a default background-color to columns
+.colored-columns {
+  [class*="col-"] { background: $column-color; }
 }
 
 

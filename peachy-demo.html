@@ -8,7 +8,7 @@
 
 <head>
   <!-- TITLE -->
-  <title>Peachy Grid - Just Peachy.</title>
+  <title>Peachy | A mediocre grid system</title>
 
   <!-- GENERAL META -->
   <meta charset="utf-8">
@@ -49,113 +49,132 @@
   <link rel="icon" href="./assets/images/icons/favicon.png" type="image/x-icon">
 </head>
 <body>
-  <div class="debug container">
-    <header class="row header">
-      <nav class="nav col-1 no-gutter">
-
-      </nav>
-    </header>
+  <nav class="nav">
+    <a href="#" class="logo">
+      <img class="logo__image" src="images/peachy.svg" alt="">
+      <h3 class="logo__header">Peachy</h3>
+      <h4 class="logo__subheader">SCSS Grid</h4>
+    </a>
+    <ul class="nav-list">
+      <li><a href="#columning" class="nav-item">Columning</a></li>
+      <li><a href="#breakpoints" class="nav-item">Breakpoints</a></li>
+      <li><a href="#utility-classes" class="nav-item">Utility Classes</a></li>
+      <li><a href="#options" class="nav-item">Options</a></li>
+    </ul>
+  </nav>
+  <!-- End Nav -->
+  <main class="main-container">
     <div class="row">
-      <div class="col-1 no-gutter" style="min-height: 500px;"></div>
-    </div>
-    <div class="row test">
-      <div class="col-4 col-space" style="min-height: 100px;"></div>
-      <div class="col-2" style="min-height: 100px; transform: translateY(calc(-50%)); background: #badbad;"></div>
-      <div class="col-4 col-space" style="min-height: 100px;"></div>
-    </div>
-    <div class="row test">
-      <div class="col-1 bp-m-2 bp-xl-4" style="min-height: 100px;"></div>
-      <div class="col-1 bp-m-2 bp-xl-4" style="min-height: 100px;"></div>
-      <div class="col-1 bp-m-2 bp-xl-4" style="min-height: 100px;"></div>
-      <div class="col-1 bp-m-2 bp-xl-4" style="min-height: 100px;"></div>
-    </div>
-    <div class="row test">
-      <div class="card col-1 bp-s-1 bp-m-2 no-padding">
-        <div class="col-2 bp-xxl-1 no-gutter no-padding" style="background-image: url('http://bit.ly/2grs299'); background-position: center;"></div>
-        <div class="col-2 bp-xxl-1 no-gutter">
-          This is the text container with a picture to the right of it.
-        </div>
-      </div>
-      <div class="card col-1 bp-s-1 bp-m-2 no-padding">
-        <div class="col-2 bp-xxl-1 no-padding" style="background-image: url('http://bit.ly/2grs299'); background-position: center;"></div>
-        <div class="col-2 bp-xxl-1">
-          This is the text container with a picture to the right of it.
-        </div>
-      </div>
-      <div class="card col-4 bp-s-1 bp-m-2 bp-l-4 no-padding">
-        <div class="col-1 no-gutter no-padding" style="background-image: url('http://bit.ly/2grs299'); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
-        <div class="col-1 no-gutter">
-          This is the text container with a picture to the right of it.
-        </div>
-      </div>
-      <div class="card col-4 bp-s-1 bp-m-2 bp-l-4 no-padding">
-        <div class="col-1 no-gutter no-padding" style="background-image: url('http://bit.ly/2grs299'); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
-        <div class="col-1 no-gutter">
-          This is the text container with a picture to the right of it.
-        </div>
-      </div>
-      <div class="card col-4 bp-s-1 bp-m-2 bp-l-4 no-padding">
-        <div class="col-1 no-gutter no-padding" style="background-image: url('http://bit.ly/2grs299'); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
-        <div class="col-1 no-gutter">
-          This is the text container with a picture to the right of it.
-        </div>
-      </div>
-      <div class="card col-4 bp-s-1 bp-m-2 bp-l-4 no-padding">
-        <div class="col-1 no-gutter no-padding" style="background-image: url('http://bit.ly/2grs299'); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
-        <div class="col-1 no-gutter">
-          This is the text container with a picture to the right of it.
+      <div class="banner col-1 no-gutter">
+        <div class="banner-content">
+          <img class="banner-logo" src="images/peachy.svg" alt="">
+          <h1 class="banner-title">Peachy</h1>
+          <h2 class="banner-subtitle">SCSS Grid</h2>
+          <p class="banner-text">A mediocre grid system.</p>
         </div>
       </div>
     </div>
-    <div class="row test">
-      <div class="col-1 bp-m-2 bp-l-hide bp-xl-2 bp-xxl-1"></div>
-      <div class="col-4"></div>
-      <div class="col-4 col-space"></div>
-      <div class="col-4 bp-l-2 bp-xxl-4"></div>
-      <div class="col-1 bp-xxl-4"></div>
-      <div class="col-2 bp-xxl-2-3"></div>
-      <div class="col-2 bp-xxl-3"></div>
-    </div>
-    <div class="row test">
-      <div class="card col-1 bp-m-2-3 bp-l-3 no-padding">
-        <div class="col-2 no-gutter">
-          This is the text container with a picture to the right of it.
-        </div>
-        <div class="col-2 no-gutter no-padding" style="background-image: url('http://bit.ly/2grs299'); background-position: center;"></div>
-      </div>
-      <div class="card col-1 bp-m-3 no-padding">
-        <div class="col-2 no-gutter">
-          This is the text container with a picture to the right of it.
-        </div>
-        <div class="col-2 no-gutter no-padding" style="background-image: url('http://bit.ly/2grs299'); background-position: center;"></div>
-      </div>
-      <div class="card col-1 bp-m-1 bp-l-3 no-padding">
-        <div class="col-2 no-gutter">
-          This is the text container with a picture to the right of it.
-        </div>
-        <div class="col-2 no-gutter no-padding" style="background-image: url('http://bit.ly/2grs299'); background-position: center;"></div>
-      </div>
-      <div class="col-2">
-        <div class="col-2-3">
-          hello
-        </div>
-        <div class="col-3">
-          world
-        </div>
-      </div>
-      <div class="col-2">
-        <div class="col-2-3">
-          hello
-        </div>
-        <div class="col-3">
-          world
-        </div>
+    <div class="row">
+      <div class="col-1 no-padding">
+        <h2 class="section-header" id="columning">Columning</h2>
       </div>
     </div>
-    <footer class="row footer">
-      <div class="col-1 no-gutter"></div>
+    <div class="row center-column colored-columns">
+      <div class="col-1">
+        <label>Column: .col-1</label>
+      </div>
+      <div class="col-1 bp-l-2-3">
+        <label>Column: .col-2-3</label>
+      </div>
+      <div class="col-1 bp-l-3">
+        <label>Column: .col-3</label>
+      </div>
+      <div class="col-1 bp-l-2">
+        <label>Column: .col-2</label>
+      </div>
+      <div class="col-1 bp-l-2">
+        <label>Column: .col-2</label>
+      </div>
+      <div class="col-1 bp-l-3">
+        <label>Column: .col-3</label>
+      </div>
+      <div class="col-1 bp-l-3">
+        <label>Column: .col-3</label>
+      </div>
+      <div class="col-1 bp-l-3">
+        <label>Column: .col-3</label>
+      </div>
+      <div class="col-1 bp-l-4">
+        <label>Column: .col-4</label>
+      </div>
+      <div class="col-1 bp-l-4">
+        <label>Column: .col-4</label>
+      </div>
+      <div class="col-1 bp-l-4">
+        <label>Column: .col-4</label>
+      </div>
+      <div class="col-1 bp-l-4">
+        <label>Column: .col-4</label>
+      </div>
+      <div class="col-1 bp-l-5">
+        <label>Column: .col-5</label>
+      </div>
+      <div class="col-1 bp-l-5">
+        <label>Column: .col-5</label>
+      </div>
+      <div class="col-1 bp-l-5">
+        <label>Column: .col-5</label>
+      </div>
+      <div class="col-1 bp-l-5">
+        <label>Column: .col-5</label>
+      </div>
+      <div class="col-1 bp-l-5">
+        <label>Column: .col-5</label>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-1 no-padding">
+        <h2 class="section-header" id="breakpoints">Breakpoints</h2>
+      </div>
+    </div>
+    <div class="breakpoints row colored-columns">
+      <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
+        <label>col-1<br/>bp-s-1<br/>bp-m-2<br/>bp-l-3<br/>bp-xl-4<br/>bp-xxl-5</label>
+      </div>
+      <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
+        <label>col-1<br/>bp-s-1<br/>bp-m-2<br/>bp-l-3<br/>bp-xl-4<br/>bp-xxl-5</label>
+      </div>
+      <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
+        <label>col-1<br/>bp-s-1<br/>bp-m-2<br/>bp-l-3<br/>bp-xl-4<br/>bp-xxl-5</label>
+      </div>
+      <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
+        <label>col-1<br/>bp-s-1<br/>bp-m-2<br/>bp-l-3<br/>bp-xl-4<br/>bp-xxl-5</label>
+      </div>
+      <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
+        <label>col-1<br/>bp-s-1<br/>bp-m-2<br/>bp-l-3<br/>bp-xl-4<br/>bp-xxl-5</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 no-padding">
+        <h2 class="section-header" id="utility-classes">Utility Classes</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 no-padding">
+        <h2 class="section-header" id="options">Options</h2>
+      </div>
+    </div>
+
+
+    <footer class="row">
+      <div class="footer col-1 no-gutter">
+        <p class="the-mob">A product of <a href="http://wallabymob.com">The Mob</a></p>
+      </div>
     </footer>
-  </div>
+  </main>
+  <!-- End Main Container -->
 
 </body>
 </html>

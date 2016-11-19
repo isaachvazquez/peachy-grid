@@ -1,8 +1,8 @@
-// =====================================================================
+// ====================================================================================
 // Gulp Tasks
 // Install Gulp plugins:
-// npm install --save-dev gulp-uglify gulp-sass gulp-concat gulp-cssnano gulp-tape tap-colorize
-// =====================================================================
+// npm install --save-dev gulp-uglify gulp-sass gulp-concat gulp-cssnano gulp-sass-lint
+// ====================================================================================
 var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
 		concat = require('gulp-concat'),
