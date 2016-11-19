@@ -1,4 +1,6 @@
-# peachy grid
+![Peachy](http://isaacv.net/peachy/peachy.png)
+
+# Peachy
 
 Peachy is a SCSS Grid system.
 
