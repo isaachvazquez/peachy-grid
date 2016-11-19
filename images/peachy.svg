@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200px" height="259px" viewBox="0 0 200 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Peach V3 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="70.2382812%" y1="-8.10546875%" x2="29.7890625%" y2="95.4785156%" id="linearGradient-1">
+            <stop stop-color="#FFEBBB" offset="0%"></stop>
+            <stop stop-color="#FF864D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="100%" x2="60.6508001%" y2="39.2223323%" id="linearGradient-2">
+            <stop stop-color="#78DB5F" offset="0%"></stop>
+            <stop stop-color="#BDFCA2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Peach-V3-Copy">
+            <ellipse id="Peach" fill="url(#linearGradient-1)" cx="100" cy="158.826739" rx="100" ry="100.120629"></ellipse>
+            <path d="M102.038736,51.5408997 C102.038736,51.5408997 108.721471,22.7053642 131.566435,8.81226386 C154.4114,-5.0808365 187.038736,1.6111041 187.038736,1.6111041 C187.038736,1.6111041 181.968681,31.5943852 160.014062,43.7046464 C138.059443,55.8149076 102.038736,51.5408997 102.038736,51.5408997 Z" id="Leaf" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>
