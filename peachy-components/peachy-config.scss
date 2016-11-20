@@ -10,17 +10,26 @@ $bottom-gutter: 10px;
 
 // Column Sizes
 $full: calc(100% - (#{$side-gutter} * 2));
-$half: calc(50% - (#{$side-gutter} * 2));
+$four-fifth: calc(80% - (#{$side-gutter} * 2));
+$three-quarter: calc(75% - (#{$side-gutter} * 2));
 $two-third: calc(66.66666% - (#{$side-gutter} * 2));
+$three-fifth: calc(60% - (#{$side-gutter} * 2));
+$half: calc(50% - (#{$side-gutter} * 2));
+$two-fifth: calc(40% - (#{$side-gutter} * 2));
 $third: calc(33.33333% - (#{$side-gutter} * 2));
 $quarter: calc(25% - (#{$side-gutter} * 2));
 $fifth: calc(20% - (#{$side-gutter} * 2));
 
 
+
 // .no-gutter Column Sizes
 $full-no-gutter: 100%;
-$half-no-gutter: 50%;
+$four-fifth-no-gutter: 80%;
+$three-quarter-no-gutter: 75%;
 $two-third-no-gutter: 66.66666%;
+$three-fifth-no-gutter: 60%;
+$half-no-gutter: 50%;
+$two-fifth-no-gutter: 40%;
 $third-no-gutter: 33.33333%;
 $quarter-no-gutter: 25%;
 $fifth-no-gutter: 20%;
@@ -39,4 +48,9 @@ $peach: #FF8B53;
 $light-peach: #FFEBBB;
 $green: #7FDE66;
 $white: #ffffff;
-$column-color: #f5f5f5;
+$column-color: #efefef;
+
+
+
+// Dark Colors
+// $column-color: #3c3b3b;
