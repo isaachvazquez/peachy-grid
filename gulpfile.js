@@ -3,12 +3,15 @@
 // Install Gulp plugins:
 // npm install --save-dev gulp-uglify gulp-sass gulp-concat gulp-cssnano gulp-sass-lint
 // ====================================================================================
+// Gulp Modules
 var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
 		concat = require('gulp-concat'),
 		scss = require('gulp-sass'),
-		cssnano = require('gulp-cssnano');
+		cssnano = require('gulp-cssnano'),
+		sasslint = require('gulp-sass-lint');
 
+// Asset Paths
 var scssPath = './peachy-components/peachy.scss',
 		scssWatchPath = './peachy-components/*.scss',
 		compiledCSSPath = './';
@@ -38,6 +41,14 @@ gulp.task("build-prod-css", function () {
 			.pipe(gulp.dest(compiledCSSPath));
 });
 
+// Linter
+gulp.task('sass-lint', function () {
+  return gulp.src(scssPath)
+    .pipe(sasslint({ configFile: 'sass-lint.yml' }))
+    .pipe(sasslint.format())
+    .pipe(sasslint.failOnError());
+});
+
 // ========================================
 // Gulp Production Build
 // ========================================
@@ -48,5 +59,5 @@ gulp.task('build', ['build-prod-css']);
 // =====================================================
 gulp.task('watch', function() {
 	console.log("I'm watching you...");
-	gulp.watch(scssWatchPath, ['build-dev-css']);
+	gulp.watch(scssWatchPath, ['sass-lint', 'build-dev-css']);
 });
