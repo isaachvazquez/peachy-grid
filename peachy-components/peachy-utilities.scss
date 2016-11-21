@@ -12,28 +12,32 @@
 
 // Hide Classes
 
-// S Breakpoint
-@media (min-width: $breakpoint-s) {
 
+// Hiding at a breakpoint
+// ======================
+
+// S Breakpoint
+@media (min-width: $breakpoint-s) and (max-width: $breakpoint-m) {
+  .hide-s { display: none !important; }
 }
 
 // M Breakpoint
-@media (min-width: $breakpoint-m) {
-
+@media (min-width: $breakpoint-m) and (max-width: $breakpoint-l) {
+  .hide-m { display: none !important; }
 }
 
 // L Breakpoint
-@media (min-width: $breakpoint-l) {
-
+@media (min-width: $breakpoint-l) and (max-width: $breakpoint-xl) {
+  .hide-l { display: none !important; }
 }
 
 
 // XL Breakpoint
-@media (min-width: $breakpoint-xl) {
-
+@media (min-width: $breakpoint-xl) and (max-width: $breakpoint-xxl) {
+  .hide-xl { display: none !important; }
 }
 
 // XXL Breakpoint
 @media (min-width: $breakpoint-xxl) {
-
+  .hide-xxl { display: none !important; }
 }
