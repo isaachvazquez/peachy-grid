@@ -25,7 +25,7 @@
   <!-- Facebook sharing. http://developers.facebook.com/docs/opengraph/ -->
   <meta property="og:type" content="Page Name">
   <meta property="og:title" content="">
-  <meta property="og:image" content="./assets/images/icons/favicon.png">
+  <meta property="og:image" content="./images/peachy-favicon.png">
   <meta property="og:site_name" content="Site Name">
   <meta property="og:url" content="http://domain.com">
   <meta property="og:description" content="">
@@ -36,7 +36,7 @@
   <meta name="twitter:creator" content="@twitter_handle">
   <meta name="twitter:title" content="Site Title">
   <meta name="twitter:description" content="Description">
-  <meta name="twitter:image:src" content="/assets/images/icons/favicon.png">
+  <meta name="twitter:image:src" content="./images/peachy-favicon.png">
 
   <!-- Custom CSS -->
   <!-- You want to have your CSS as the very first asset that the HTML requests. - Harry Roberts -->
@@ -44,9 +44,9 @@
   <link rel="stylesheet" type="text/css" href="peachy-demo.css" />
 
   <!-- ICONS -->
-  <link rel="apple-touch-icon" href="./assets/images/icons/apple-touch-icon.png">
-  <link rel="shortcut icon" href="./assets/images/icons/favicon.png" type="image/x-icon">
-  <link rel="icon" href="./assets/images/icons/favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./images/peachy-favicon.png">
+  <link rel="shortcut icon" href="./images/peachy-favicon.png" type="image/x-icon">
+  <link rel="icon" href="./images/peachy-favicon.png" type="image/x-icon">
 </head>
 
 
@@ -62,7 +62,7 @@
       <li><a href="#columning" class="nav-item">Columning</a></li>
       <li><a href="#breakpoints" class="nav-item">Breakpoints</a></li>
       <li><a href="#utility-classes" class="nav-item">Utility Classes</a></li>
-      <li><a href="#options" class="nav-item">Options</a></li>
+      <li><a href="#usage" class="nav-item">Setup &amp; Usage</a></li>
       <li><a href="#demos" class="nav-item">Demo Sites</a></li>
     </ul>
   </nav>
@@ -293,7 +293,56 @@
 
     <div class="row center-column ">
       <div class="col-1 no-padding">
-        <h2 class="section-header" id="options">Options</h2>
+        <h2 class="section-header" id="usage">Setup &amp; Usage</h2>
+      </div>
+    </div>
+
+    <div class="row center-column ">
+      <div class="col-1 no-padding">
+        <h3 class="subsection-header">Peachy Config</h3>
+        <p>The Peachy Defaults are as follows: </p>
+        <h4>Gutters</h4>
+        <ul>
+          <li><code>side-gutter: 10px</code></li>
+          <li><code>top-gutter: 10px</code></li>
+          <li><code>bottom-gutter: 10px</code></li>
+        </ul>
+        <h4>Breakpoints</h4>
+        <ul>
+          <li><code>breakpoint-s: 400px</code></li>
+          <li><code>breakpoint-m: 640px</code></li>
+          <li><code>breakpoint-l: 960px</code></li>
+          <li><code>breakpoint-xl: 1024px</code></li>
+          <li><code>breakpoint-xxl: 1600px</code></li>
+        </ul>
+        </code>
+        <p>If these work for you, you can just add <code>peachy.css</code> to your stylesheets, and reference it in your markup and you should be good to go.</p>
+        <p>Otherwise, if you would like to customize your gutters, and breakpoints, follow these steps:</p>
+        <h4>Terminal</h4>
+        <ul>
+          <li>Update the variables in <code>peachy-config.scss</code></li>
+          <li>In the terminal, run <code>gulp build</code></li>
+        </ul>
+
+        <!-- <h4>Web Option</h4>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul> -->
+      </div>
+    </div>
+
+    <div class="row center-column ">
+      <div class="col-1 no-padding">
+        <h2 class="section-header" id="demos">Demo Sites</h2>
       </div>
     </div>
 

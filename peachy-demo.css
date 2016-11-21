@@ -227,13 +227,15 @@ a:hover {
 /* Code */
 code {
   padding: 5px 7px;
-  text-align: center;
-  /*color: #7FDE66;*/
-  /*background: #f5f5f5;*/
+  text-align: left;
+  line-height: 20px;
+  background: #f5f5f5;
+  border-radius: 2px;
+}
 
+code.dark {
   color: #FF8B53;
   background: #2d2d2d;
-  border-radius: 2px;
 }
 
 
@@ -251,7 +253,8 @@ code {
 }
 
 @media(max-width: 900px) {
-  .section-header { font-size: 25px; }
+  .section-header { font-size: 30px; }
+  .subsection-header { margin-top: 0; }
 }
 
 
