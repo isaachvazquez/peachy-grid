@@ -7,3 +7,33 @@
 
 // Take up invisible space
 .col-space { visibility: hidden; }
+
+
+
+// Hide Classes
+
+// S Breakpoint
+@media (min-width: $breakpoint-s) {
+
+}
+
+// M Breakpoint
+@media (min-width: $breakpoint-m) {
+
+}
+
+// L Breakpoint
+@media (min-width: $breakpoint-l) {
+
+}
+
+
+// XL Breakpoint
+@media (min-width: $breakpoint-xl) {
+
+}
+
+// XXL Breakpoint
+@media (min-width: $breakpoint-xxl) {
+
+}
