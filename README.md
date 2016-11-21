@@ -14,3 +14,11 @@ Some words to describe Peachy:
 * Peachy
 
 It's nothing special, but it get's the job done. It's Peachy.
+
+
+## TODO
+
+1. Add .push-left- .push-right- class options
+2. Use inline SVG for Peachy Logo
+3. Add cssnano
+4. Add SCSS Linting
