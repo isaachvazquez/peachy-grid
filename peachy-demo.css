@@ -224,6 +224,19 @@ a:hover {
 }
 
 
+/* Code */
+code {
+  padding: 5px 7px;
+  text-align: center;
+  /*color: #7FDE66;*/
+  /*background: #f5f5f5;*/
+
+  color: #FF8B53;
+  background: #2d2d2d;
+  border-radius: 2px;
+}
+
+
 /* Sections */
 .section-header {
   margin: 30px 0;
@@ -231,6 +244,10 @@ a:hover {
   letter-spacing: 6px;
   font-weight: 900;
   font-size: 40px;
+}
+
+.subsection-header {
+  margin-top: 70px;
 }
 
 @media(max-width: 900px) {
