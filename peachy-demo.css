@@ -11,7 +11,6 @@ html, body {
 
 body {
   margin: 0;
-  /*background: #2d2d2d;*/
   font-family: 'Raleway', sans-serif;
   color: #4F4F4F;
 }
@@ -48,10 +47,7 @@ a:hover {
 
 
 /* Column Overrides */
-[class*="col-"] {
-  border-radius: 2px;
-  /*background: #7FDE66;*/
-}
+[class*="col-"] { border-radius: 2px; }
 
 [class*="col-"] [class*="col-"] {
   border-radius: 0;
@@ -64,8 +60,6 @@ a:hover {
   text-align: center;
   letter-spacing: 2px;
 }
-
-
 
 .the-mob {
   margin: 0;
@@ -81,7 +75,6 @@ a:hover {
   padding: 20px;
   width: 250px;
   height: 100vh;
-  background: #4f4f4f;
   background: #333333;
 }
 
@@ -120,9 +113,6 @@ a:hover {
 }
 
 .nav-list li {
-  border-bottom: 1px solid #4a4a4a;
-  border-top: 1px solid #5a5a5a;
-
   border-bottom: 1px solid #2b2b2b;
   border-top: 1px solid #3c3c3c;
 }
@@ -177,7 +167,6 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 600px;
-  /*background: #bad;*/
 }
 
 .banner-title {
