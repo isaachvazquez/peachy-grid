@@ -45,6 +45,13 @@ a:hover {
 
 }
 
+p {
+  line-height: 26px;
+}
+
+li {
+  line-height: 30px;
+}
 
 /* Column Overrides */
 [class*="col-"] { border-radius: 2px; }
@@ -72,10 +79,13 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 9;
-  padding: 20px;
   width: 250px;
   height: 100vh;
   background: #333333;
+}
+
+.nav-content {
+  border-radius: 0;
 }
 
 .logo {
@@ -143,11 +153,29 @@ a:hover {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  .nav {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-content {}
+  .nav-list { margin-top: 0; }
+}
+
+
 /* Main Container */
 .main-container {
   margin-left: 250px;
   padding: 0 20px;
   width: calc(100% - 250px);
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 
@@ -207,6 +235,7 @@ a:hover {
   }
 }
 
+
 /* Breakpoints */
 .breakpoints label {
   text-align: left;
@@ -245,6 +274,14 @@ code.dark {
   .section-header { font-size: 30px; }
   .subsection-header { margin-top: 0; }
 }
+
+
+/* Hide Colors */
+.colored-columns .hide-color-1 { background: #5ddad1; }
+.colored-columns .hide-color-2 { background: #e7a6f5; }
+.colored-columns .hide-color-3 { background: #a6f5c0; }
+.colored-columns .hide-color-4 { background: #f5b98b; }
+.colored-columns .hide-color-5 { background: #ff8498; }
 
 
 /* Footer */

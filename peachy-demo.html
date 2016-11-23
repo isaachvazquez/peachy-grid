@@ -52,19 +52,23 @@
 
 
 <body>
-  <nav class="nav">
-    <a href="#" class="logo">
-      <img class="logo__image" src="images/peachy.svg" alt="">
-      <h3 class="logo__header">Peachy</h3>
-      <h4 class="logo__subheader">SCSS Grid</h4>
-    </a>
-    <ul class="nav-list">
-      <li><a href="#columning" class="nav-item">Columning</a></li>
-      <li><a href="#breakpoints" class="nav-item">Breakpoints</a></li>
-      <li><a href="#utility-classes" class="nav-item">Utility Classes</a></li>
-      <li><a href="#usage" class="nav-item">Setup &amp; Usage</a></li>
-      <li><a href="#demos" class="nav-item">Demo Sites</a></li>
-    </ul>
+  <nav class="nav row">
+    <div class="col-1 no-gutter">
+      <a href="#" class="logo">
+        <img class="logo__image" src="images/peachy.svg" alt="">
+        <h3 class="logo__header">Peachy</h3>
+        <h4 class="logo__subheader">SCSS Grid</h4>
+      </a>
+    </div>
+    <div class="nav-content col-1 no-gutter">
+      <ul class="nav-list">
+        <li><a href="#columning" class="nav-item">Columning</a></li>
+        <li><a href="#breakpoints" class="nav-item">Breakpoints</a></li>
+        <li><a href="#utility-classes" class="nav-item">Utility Classes</a></li>
+        <li><a href="#usage" class="nav-item">Setup &amp; Usage</a></li>
+        <li><a href="#demos" class="nav-item">Demo Sites</a></li>
+      </ul>
+    </div>
   </nav>
   <!-- End Nav -->
   <main class="main-container">
@@ -277,16 +281,16 @@
     </div>
 
     <div class="row center-column  colored-columns">
-      <div class="col-1 bp-l-2 hide-s"><label>.col-2<br/>.hide-s</label></div>
-      <div class="col-1 bp-l-2 hide-s"><label>.col-2<br/>.hide-s</label></div>
-      <div class="col-1 bp-l-2 hide-m"><label>.col-2<br/>.hide-m</label></div>
-      <div class="col-1 bp-l-2 hide-m"><label>.col-2<br/>.hide-m</label></div>
-      <div class="col-1 bp-l-2 hide-s hide-m hide-l"><label>.col-2<br/>.hide-l.hide-m.hide-s</label></div>
-      <div class="col-1 bp-l-2 hide-s hide-m hide-l"><label>.col-2<br/>.hide-l.hide-m.hide-s</label></div>
-      <div class="col-1 bp-l-2 hide-xl"><label>.col-2<br/>.hide-xl</label></div>
-      <div class="col-1 bp-l-2 hide-xl"><label>.col-2<br/>.hide-xl</label></div>
-      <div class="col-1 bp-l-2 hide-xxl"><label>.col-2<br/>.hide-xxl</label></div>
-      <div class="col-1 bp-l-2 hide-xxl"><label>.col-2<br/>.hide-xxl</label></div>
+      <div class="col-1 bp-l-2 hide-s hide-color-1"><label>.col-2<br/>.hide-s</label></div>
+      <div class="col-1 bp-l-2 hide-s hide-color-1"><label>.col-2<br/>.hide-s</label></div>
+      <div class="col-1 bp-l-2 hide-m hide-color-2"><label>.col-2<br/>.hide-m</label></div>
+      <div class="col-1 bp-l-2 hide-m hide-color-2"><label>.col-2<br/>.hide-m</label></div>
+      <div class="col-1 bp-l-2 hide-s hide-m hide-l hide-color-3"><label>.col-2<br/>.hide-l.hide-m.hide-s</label></div>
+      <div class="col-1 bp-l-2 hide-s hide-m hide-l hide-color-3"><label>.col-2<br/>.hide-l.hide-m.hide-s</label></div>
+      <div class="col-1 bp-l-2 hide-xl hide-color-4"><label>.col-2<br/>.hide-xl</label></div>
+      <div class="col-1 bp-l-2 hide-xl hide-color-4"><label>.col-2<br/>.hide-xl</label></div>
+      <div class="col-1 bp-l-2 hide-xxl hide-color-5"><label>.col-2<br/>.hide-xxl</label></div>
+      <div class="col-1 bp-l-2 hide-xxl hide-color-5"><label>.col-2<br/>.hide-xxl</label></div>
     </div>
 
 
