@@ -1,4 +1,4 @@
-![Peachy](http://isaacv.net/peachy/peachy-text.png)
+![Peachy](http://wallabymob.com/peachy/peachy-text.png)
 
 # Peachy
 
