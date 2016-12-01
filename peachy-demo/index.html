@@ -52,317 +52,338 @@
 
 
 <body>
-  <nav class="nav row">
-    <header class="nav-header col-1 no-gutter">
-      <a href="#" class="logo">
-        <img class="logo__image" src="images/peachy.svg" alt="">
-        <h3 class="logo__header">Peachy</h3>
-        <h4 class="logo__subheader">SCSS Grid</h4>
-      </a>
-    </header>
-    <div class="nav-content col-1 no-gutter">
-      <a href="#" class="mobile-menu-button">
-        <span class="menu-dash top"></span>
-        <span class="menu-dash middle"></span>
-        <span class="menu-dash bottom"></span>
-      </a>
-      <ul class="nav-list">
-        <li><a href="#columning" class="nav-item"><i class="nav-item-icon"></i><span class="nav-item-text">Columning</span></a></li>
-        <li><a href="#breakpoints" class="nav-item"><i class="nav-item-icon"></i><span class="nav-item-text">Breakpoints</span></a></li>
-        <li><a href="#utility-classes" class="nav-item"><i class="nav-item-icon"></i><span class="nav-item-text">Utility Classes</span></a></li>
-        <li><a href="#usage" class="nav-item"><i class="nav-item-icon"></i><span class="nav-item-text">Setup &amp; Usage</span></a></li>
-        <li><a href="#demos" class="nav-item"><i class="nav-item-icon"></i><span class="nav-item-text">Demo Sites</span></a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- End Nav -->
-  <main class="main-container">
-    <div class="row">
-      <div class="banner col-1 no-gutter">
-        <div class="banner-content">
-          <img class="banner-logo" src="images/peachy.svg" alt="">
-          <h1 class="banner-title">Peachy</h1>
-          <h2 class="banner-subtitle">SCSS Grid</h2>
-          <p class="banner-text">A mediocre grid system.</p>
+  <div class="site-container">
+    <nav class="nav row">
+      <header class="nav-header col-1 no-gutter">
+        <a href="#" class="logo">
+          <img class="logo__image" src="images/peachy.svg" alt="">
+          <h3 class="logo__header">Peachy</h3>
+          <h4 class="logo__subheader">SCSS Grid</h4>
+        </a>
+      </header>
+      <div class="nav-content col-1 no-gutter">
+        <a href="#" class="mobile-menu-button">
+          <span class="menu-dash top"></span>
+          <span class="menu-dash middle"></span>
+          <span class="menu-dash bottom"></span>
+        </a>
+        <ul class="nav-list">
+          <li><a href="#columning" class="nav-item"><i class="nav-item-icon"></i><span class="nav-item-text">Columning</span></a></li>
+          <li><a href="#breakpoints" class="nav-item"><i class="nav-item-icon"></i><span class="nav-item-text">Breakpoints</span></a></li>
+          <li><a href="#utility-classes" class="nav-item"><i class="nav-item-icon"></i><span class="nav-item-text">Utility Classes</span></a></li>
+          <li><a href="#usage" class="nav-item"><i class="nav-item-icon"></i><span class="nav-item-text">Setup &amp; Usage</span></a></li>
+          <li><a href="#demos" class="nav-item"><i class="nav-item-icon"></i><span class="nav-item-text">Demo Sites</span></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Nav -->
+    <main class="main-container">
+      <div class="row">
+        <div class="banner col-1 no-gutter">
+          <div class="banner-content">
+            <img class="banner-logo" src="images/peachy.svg" alt="">
+            <h1 class="banner-title">Peachy</h1>
+            <h2 class="banner-subtitle">SCSS Grid</h2>
+            <p class="banner-text">A mediocre grid system.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row center-column ">
-      <div class="col-1 no-padding">
-        <h2 class="section-header" id="columning">Columning</h2>
-      </div>
-    </div>
-
-    <div class="row center-column ">
-      <div class="col-1 no-padding">
-        <h3 class="subsection-header">Column Options</h3>
-        <p>Peachy currently supports up to 5 columns. I haven't needed more than that so far, but I'm willing to add more if someone needs it.</p>
-      </div>
-    </div>
-
-    <div class="row center-column colored-columns">
-      <!--  -->
-      <div class="col-1">
-        <label>Column: .col-1</label>
+      <div class="row center-column ">
+        <div class="col-1 no-padding">
+          <h2 class="section-header" id="columning">Columning</h2>
+        </div>
       </div>
 
-
-      <!--  -->
-      <div class="col-1 bp-l-4-5">
-        <label>Column: .col-4-5</label>
-      </div>
-      <div class="col-1 bp-l-5">
-        <label>Column: .col-5</label>
+      <div class="row center-column ">
+        <div class="col-1 no-padding">
+          <h3 class="subsection-header">Column Options</h3>
+          <p>Peachy currently supports up to 5 columns. I haven't needed more than that so far, but I'm willing to add more if someone needs it.</p>
+        </div>
       </div>
 
-
-      <!--  -->
-      <div class="col-1 bp-l-3-4">
-        <label>Column: .col-3-4</label>
-      </div>
-      <div class="col-1 bp-l-4">
-        <label>Column: .col-4</label>
-      </div>
+      <div class="row center-column colored-columns">
+        <!--  -->
+        <div class="col-1">
+          <label>Column: .col-1</label>
+        </div>
 
 
-      <!--  -->
-      <div class="col-1 bp-l-2-3">
-        <label>Column: .col-2-3</label>
-      </div>
-      <div class="col-1 bp-l-3">
-        <label>Column: .col-3</label>
-      </div>
-
-      <!--  -->
-      <div class="col-1 bp-l-3-5">
-        <label>Column: .col-3-5</label>
-      </div>
-      <div class="col-1 bp-l-2-5">
-        <label>Column: .col-2-5</label>
-      </div>
-
-      <!-- Halfs -->
-      <div class="col-1 bp-l-2">
-        <label>Column: .col-2</label>
-      </div>
-      <div class="col-1 bp-l-2">
-        <label>Column: .col-2</label>
-      </div>
-
-      <!--  -->
-      <div class="col-1 bp-l-2-5">
-        <label>Column: .col-2-5</label>
-      </div>
-      <div class="col-1 bp-l-3-5">
-        <label>Column: .col-3-5</label>
-      </div>
-
-      <!-- Thirds -->
-      <div class="col-1 bp-l-3">
-        <label>Column: .col-3</label>
-      </div>
-      <div class="col-1 bp-l-3">
-        <label>Column: .col-3</label>
-      </div>
-      <div class="col-1 bp-l-3">
-        <label>Column: .col-3</label>
-      </div>
-
-      <!-- Fourths -->
-      <div class="col-1 bp-l-4">
-        <label>Column: .col-4</label>
-      </div>
-      <div class="col-1 bp-l-4">
-        <label>Column: .col-4</label>
-      </div>
-      <div class="col-1 bp-l-4">
-        <label>Column: .col-4</label>
-      </div>
-      <div class="col-1 bp-l-4">
-        <label>Column: .col-4</label>
-      </div>
-
-      <!-- Fifths -->
-      <div class="col-1 bp-l-5">
-        <label>Column: .col-5</label>
-      </div>
-      <div class="col-1 bp-l-5">
-        <label>Column: .col-5</label>
-      </div>
-      <div class="col-1 bp-l-5">
-        <label>Column: .col-5</label>
-      </div>
-      <div class="col-1 bp-l-5">
-        <label>Column: .col-5</label>
-      </div>
-      <div class="col-1 bp-l-5">
-        <label>Column: .col-5</label>
-      </div>
-    </div>
+        <!--  -->
+        <div class="col-1 bp-l-4-5">
+          <label>Column: .col-4-5</label>
+        </div>
+        <div class="col-1 bp-l-5">
+          <label>Column: .col-5</label>
+        </div>
 
 
-    <div class="row center-column ">
-      <div class="col-1 no-padding">
-        <h2 class="section-header" id="breakpoints">Breakpoints</h2>
+        <!--  -->
+        <div class="col-1 bp-l-3-4">
+          <label>Column: .col-3-4</label>
+        </div>
+        <div class="col-1 bp-l-4">
+          <label>Column: .col-4</label>
+        </div>
+
+
+        <!--  -->
+        <div class="col-1 bp-l-2-3">
+          <label>Column: .col-2-3</label>
+        </div>
+        <div class="col-1 bp-l-3">
+          <label>Column: .col-3</label>
+        </div>
+
+        <!--  -->
+        <div class="col-1 bp-l-3-5">
+          <label>Column: .col-3-5</label>
+        </div>
+        <div class="col-1 bp-l-2-5">
+          <label>Column: .col-2-5</label>
+        </div>
+
+        <!-- Halfs -->
+        <div class="col-1 bp-l-2">
+          <label>Column: .col-2</label>
+        </div>
+        <div class="col-1 bp-l-2">
+          <label>Column: .col-2</label>
+        </div>
+
+        <!--  -->
+        <div class="col-1 bp-l-2-5">
+          <label>Column: .col-2-5</label>
+        </div>
+        <div class="col-1 bp-l-3-5">
+          <label>Column: .col-3-5</label>
+        </div>
+
+        <!-- Thirds -->
+        <div class="col-1 bp-l-3">
+          <label>Column: .col-3</label>
+        </div>
+        <div class="col-1 bp-l-3">
+          <label>Column: .col-3</label>
+        </div>
+        <div class="col-1 bp-l-3">
+          <label>Column: .col-3</label>
+        </div>
+
+        <!-- Fourths -->
+        <div class="col-1 bp-l-4">
+          <label>Column: .col-4</label>
+        </div>
+        <div class="col-1 bp-l-4">
+          <label>Column: .col-4</label>
+        </div>
+        <div class="col-1 bp-l-4">
+          <label>Column: .col-4</label>
+        </div>
+        <div class="col-1 bp-l-4">
+          <label>Column: .col-4</label>
+        </div>
+
+        <!-- Fifths -->
+        <div class="col-1 bp-l-5">
+          <label>Column: .col-5</label>
+        </div>
+        <div class="col-1 bp-l-5">
+          <label>Column: .col-5</label>
+        </div>
+        <div class="col-1 bp-l-5">
+          <label>Column: .col-5</label>
+        </div>
+        <div class="col-1 bp-l-5">
+          <label>Column: .col-5</label>
+        </div>
+        <div class="col-1 bp-l-5">
+          <label>Column: .col-5</label>
+        </div>
       </div>
-    </div>
 
-    <div class="breakpoints row center-column colored-columns">
-      <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
-        <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+
+      <div class="row center-column ">
+        <div class="col-1 no-padding">
+          <h2 class="section-header" id="breakpoints">Breakpoints</h2>
+        </div>
       </div>
-      <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
-        <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+
+      <div class="row center-column ">
+        <div class="col-1 no-padding">
+          <h3 class="subsection-header">Conditional Breakpoints</h3>
+          <p>Conditional breakpoints allow you to change the column size at each specific breakpoint.</p>
+          <p>For example:</p>
+          <code>
+            &lt;div class="col-1 bp-l-2"&gt;&lt;/div&gt;
+            <br/>
+            &lt;div class="col-1 bp-l-2"&gt;&lt;/div&gt;
+          </code>
+          <p>will create 2 1 column things up until the large breakpoint, where they will then both become 2 column things.</p>
+          <h4>Gutters</h4>
+          <ul>
+            <li><code>side-gutter: 10px</code></li>
+            <li><code>top-gutter: 10px</code></li>
+            <li><code>bottom-gutter: 10px</code></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
-        <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+
+      <div class="breakpoints row center-column colored-columns">
+        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
+          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+        </div>
+        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
+          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+        </div>
+        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
+          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+        </div>
+        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
+          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+        </div>
+        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
+          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+        </div>
+        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-3-4 bp-xxl-1">
+          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-3-4<br/>.bp-xxl-1</label>
+        </div>
       </div>
-      <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
-        <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+
+
+      <div class="row center-column ">
+        <div class="col-1 no-padding">
+          <h2 class="section-header" id="utility-classes">Utility Classes</h2>
+        </div>
       </div>
-      <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
-        <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+
+
+      <div class="row center-column ">
+        <div class="col-1 no-padding">
+          <h3 class="subsection-header">No Padding (.no-padding)</h3>
+          <p>The <code>.no-padding</code> utility class removes the padding from columns.</p>
+        </div>
       </div>
-      <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-3-4 bp-xxl-1">
-        <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-3-4<br/>.bp-xxl-1</label>
+
+      <div class="row center-column colored-columns">
+        <div class="col-1 no-padding">
+          <div class="col-1 bp-l-2 no-padding"><label>.col-2.no-padding</label></div>
+          <div class="col-1 bp-l-2 no-padding"><label>.col-2.no-padding</label></div>
+          <div class="col-1 bp-l-3 no-padding"><label>.col-3.no-padding</label></div>
+          <div class="col-1 bp-l-3 no-padding"><label>.col-3.no-padding</label></div>
+          <div class="col-1 bp-l-3 no-padding"><label>.col-3.no-padding</label></div>
+          <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
+          <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
+          <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
+          <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
+        </div>
       </div>
-    </div>
 
-
-    <div class="row center-column ">
-      <div class="col-1 no-padding">
-        <h2 class="section-header" id="utility-classes">Utility Classes</h2>
+      <div class="row center-column ">
+        <div class="col-1 no-padding">
+          <h3 class="subsection-header">No Gutter (.no-gutter)</h3>
+          <p>The <code>.no-gutter</code> utility class removes the gutters from columns.</p>
+        </div>
       </div>
-    </div>
 
-
-    <div class="row center-column ">
-      <div class="col-1 no-padding">
-        <h3 class="subsection-header">No Padding (.no-padding)</h3>
-        <p>The <code>.no-padding</code> utility class removes the padding from columns.</p>
+      <div class="row center-column colored-columns">
+        <div class="col-1 no-padding">
+          <div class="col-1 bp-l-2 no-gutter"><label>.col-2.no-gutter</label></div>
+          <div class="col-1 bp-l-2 no-gutter"><label>.col-2.no-gutter</label></div>
+          <div class="col-1 bp-l-3 no-gutter"><label>.col-3.no-gutter</label></div>
+          <div class="col-1 bp-l-3 no-gutter"><label>.col-3.no-gutter</label></div>
+          <div class="col-1 bp-l-3 no-gutter"><label>.col-3.no-gutter</label></div>
+          <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
+          <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
+          <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
+          <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
+        </div>
       </div>
-    </div>
 
-    <div class="row center-column colored-columns">
-      <div class="col-1 no-padding">
-        <div class="col-1 bp-l-2 no-padding"><label>.col-2.no-padding</label></div>
-        <div class="col-1 bp-l-2 no-padding"><label>.col-2.no-padding</label></div>
-        <div class="col-1 bp-l-3 no-padding"><label>.col-3.no-padding</label></div>
-        <div class="col-1 bp-l-3 no-padding"><label>.col-3.no-padding</label></div>
-        <div class="col-1 bp-l-3 no-padding"><label>.col-3.no-padding</label></div>
-        <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
-        <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
-        <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
-        <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
+      <div class="row center-column ">
+        <div class="col-1 no-padding">
+          <h3 class="subsection-header">Hide at Breakpoint (.hide-<em>breakpoint</em>)</h3>
+            <p>These are used for hiding specific columns at one or multiple breakpoints.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row center-column ">
-      <div class="col-1 no-padding">
-        <h3 class="subsection-header">No Gutter (.no-gutter)</h3>
-        <p>The <code>.no-gutter</code> utility class removes the gutters from columns.</p>
+      <div class="row center-column  colored-columns">
+        <div class="col-1 bp-l-2 hide-s hide-color-1"><label>.col-2<br/>.hide-s</label></div>
+        <div class="col-1 bp-l-2 hide-s hide-color-1"><label>.col-2<br/>.hide-s</label></div>
+        <div class="col-1 bp-l-2 hide-m hide-color-2"><label>.col-2<br/>.hide-m</label></div>
+        <div class="col-1 bp-l-2 hide-m hide-color-2"><label>.col-2<br/>.hide-m</label></div>
+        <div class="col-1 bp-l-2 hide-s hide-m hide-l hide-color-3"><label>.col-2<br/>.hide-l.hide-m.hide-s</label></div>
+        <div class="col-1 bp-l-2 hide-s hide-m hide-l hide-color-3"><label>.col-2<br/>.hide-l.hide-m.hide-s</label></div>
+        <div class="col-1 bp-l-2 hide-xl hide-color-4"><label>.col-2<br/>.hide-xl</label></div>
+        <div class="col-1 bp-l-2 hide-xl hide-color-4"><label>.col-2<br/>.hide-xl</label></div>
+        <div class="col-1 bp-l-2 hide-xxl hide-color-5"><label>.col-2<br/>.hide-xxl</label></div>
+        <div class="col-1 bp-l-2 hide-xxl hide-color-5"><label>.col-2<br/>.hide-xxl</label></div>
       </div>
-    </div>
 
-    <div class="row center-column colored-columns">
-      <div class="col-1 no-padding">
-        <div class="col-1 bp-l-2 no-gutter"><label>.col-2.no-gutter</label></div>
-        <div class="col-1 bp-l-2 no-gutter"><label>.col-2.no-gutter</label></div>
-        <div class="col-1 bp-l-3 no-gutter"><label>.col-3.no-gutter</label></div>
-        <div class="col-1 bp-l-3 no-gutter"><label>.col-3.no-gutter</label></div>
-        <div class="col-1 bp-l-3 no-gutter"><label>.col-3.no-gutter</label></div>
-        <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
-        <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
-        <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
-        <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
+
+
+      <div class="row center-column ">
+        <div class="col-1 no-padding">
+          <h2 class="section-header" id="usage">Setup &amp; Usage</h2>
+        </div>
       </div>
-    </div>
 
-    <div class="row center-column ">
-      <div class="col-1 no-padding">
-        <h3 class="subsection-header">Hide at Breakpoint (.hide-<em>breakpoint</em>)</h3>
-          <p>These are used for hiding specific columns at one or multiple breakpoints.</p>
+      <div class="row center-column ">
+        <div class="col-1 no-padding">
+          <h3 class="subsection-header">Peachy Config</h3>
+          <p>The Peachy Defaults are as follows: </p>
+          <h4>Gutters</h4>
+          <ul>
+            <li><code>side-gutter: 10px</code></li>
+            <li><code>top-gutter: 10px</code></li>
+            <li><code>bottom-gutter: 10px</code></li>
+          </ul>
+          <h4>Breakpoints</h4>
+          <ul>
+            <li><code>breakpoint-s: 400px</code></li>
+            <li><code>breakpoint-m: 640px</code></li>
+            <li><code>breakpoint-l: 960px</code></li>
+            <li><code>breakpoint-xl: 1024px</code></li>
+            <li><code>breakpoint-xxl: 1600px</code></li>
+          </ul>
+          <p>If these work for you, you can just add <code>peachy.css</code> to your stylesheets, and reference it in your markup and you should be good to go.</p>
+          <p>Otherwise, if you would like to customize your gutters, and breakpoints, follow these steps:</p>
+          <h4>Terminal</h4>
+          <ul>
+            <li>Update the variables in <code>peachy-config.scss</code></li>
+            <li>If using Gulp, in the terminal, run <code>gulp build</code></li>
+          </ul>
+
+          <!-- <h4>Web Option</h4>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul> -->
+        </div>
       </div>
-    </div>
 
-    <div class="row center-column  colored-columns">
-      <div class="col-1 bp-l-2 hide-s hide-color-1"><label>.col-2<br/>.hide-s</label></div>
-      <div class="col-1 bp-l-2 hide-s hide-color-1"><label>.col-2<br/>.hide-s</label></div>
-      <div class="col-1 bp-l-2 hide-m hide-color-2"><label>.col-2<br/>.hide-m</label></div>
-      <div class="col-1 bp-l-2 hide-m hide-color-2"><label>.col-2<br/>.hide-m</label></div>
-      <div class="col-1 bp-l-2 hide-s hide-m hide-l hide-color-3"><label>.col-2<br/>.hide-l.hide-m.hide-s</label></div>
-      <div class="col-1 bp-l-2 hide-s hide-m hide-l hide-color-3"><label>.col-2<br/>.hide-l.hide-m.hide-s</label></div>
-      <div class="col-1 bp-l-2 hide-xl hide-color-4"><label>.col-2<br/>.hide-xl</label></div>
-      <div class="col-1 bp-l-2 hide-xl hide-color-4"><label>.col-2<br/>.hide-xl</label></div>
-      <div class="col-1 bp-l-2 hide-xxl hide-color-5"><label>.col-2<br/>.hide-xxl</label></div>
-      <div class="col-1 bp-l-2 hide-xxl hide-color-5"><label>.col-2<br/>.hide-xxl</label></div>
-    </div>
-
-
-
-    <div class="row center-column ">
-      <div class="col-1 no-padding">
-        <h2 class="section-header" id="usage">Setup &amp; Usage</h2>
+      <div class="row center-column ">
+        <div class="col-1 no-padding">
+          <h2 class="section-header" id="demos">Demo Sites</h2>
+        </div>
       </div>
-    </div>
-
-    <div class="row center-column ">
-      <div class="col-1 no-padding">
-        <h3 class="subsection-header">Peachy Config</h3>
-        <p>The Peachy Defaults are as follows: </p>
-        <h4>Gutters</h4>
-        <ul>
-          <li><code>side-gutter: 10px</code></li>
-          <li><code>top-gutter: 10px</code></li>
-          <li><code>bottom-gutter: 10px</code></li>
-        </ul>
-        <h4>Breakpoints</h4>
-        <ul>
-          <li><code>breakpoint-s: 400px</code></li>
-          <li><code>breakpoint-m: 640px</code></li>
-          <li><code>breakpoint-l: 960px</code></li>
-          <li><code>breakpoint-xl: 1024px</code></li>
-          <li><code>breakpoint-xxl: 1600px</code></li>
-        </ul>
-        </code>
-        <p>If these work for you, you can just add <code>peachy.css</code> to your stylesheets, and reference it in your markup and you should be good to go.</p>
-        <p>Otherwise, if you would like to customize your gutters, and breakpoints, follow these steps:</p>
-        <h4>Terminal</h4>
-        <ul>
-          <li>Update the variables in <code>peachy-config.scss</code></li>
-          <li>If using Gulp, in the terminal, run <code>gulp build</code></li>
-        </ul>
-
-        <!-- <h4>Web Option</h4>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul> -->
-      </div>
-    </div>
-
-    <div class="row center-column ">
-      <div class="col-1 no-padding">
-        <h2 class="section-header" id="demos">Demo Sites</h2>
-      </div>
-    </div>
 
 
-    <footer class="row">
-      <div class="footer col-1 no-gutter">
-        <p class="the-mob">A product of <a href="http://wallabymob.com">The Mob</a></p>
-      </div>
-    </footer>
-  </main>
-  <!-- End Main Container -->
+      <footer class="row">
+        <div class="footer col-1 no-gutter">
+          <p class="the-mob">A product of <a href="http://wallabymob.com">The Mob</a></p>
+        </div>
+      </footer>
+    </main>
+    <!-- End Main Container -->
+  </div>
   <script src="./peachy-demo.js"></script>
 </body>
 </html>
