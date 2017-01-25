@@ -109,6 +109,7 @@ li {
 .logo__header {
   margin-top: 15px;
   font-size: 20px;
+  font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #7FDE66;
