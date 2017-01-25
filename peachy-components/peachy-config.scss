@@ -2,6 +2,14 @@
 // Peachy Grid Config
 // ===============================
 
+// Breakpoints
+$breakpoint-s: 400px;
+$breakpoint-m: 640px;
+$breakpoint-l: 960px;
+$breakpoint-xl: 1024px;
+$breakpoint-xxl: 1600px;
+
+
 // Gutters
 $side-gutter: 10px;
 $top-gutter: 10px;
@@ -21,7 +29,6 @@ $quarter: calc(25% - (#{$side-gutter} * 2));
 $fifth: calc(20% - (#{$side-gutter} * 2));
 
 
-
 // .no-gutter Column Sizes
 $full-no-gutter: 100%;
 $four-fifth-no-gutter: 80%;
@@ -33,14 +40,6 @@ $two-fifth-no-gutter: 40%;
 $third-no-gutter: 33.33333%;
 $quarter-no-gutter: 25%;
 $fifth-no-gutter: 20%;
-
-
-// Breakpoints
-$breakpoint-s: 400px;
-$breakpoint-m: 640px;
-$breakpoint-l: 960px;
-$breakpoint-xl: 1024px;
-$breakpoint-xxl: 1600px;
 
 
 // Colors
