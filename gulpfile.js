@@ -1,15 +1,11 @@
-// ====================================================================================
+// =====================================================================
 // Gulp Tasks
-// Install Gulp plugins:
-// npm install --save-dev gulp-uglify gulp-sass gulp-concat gulp-cssnano gulp-sass-lint
-// ====================================================================================
-// Gulp Modules
+// =====================================================================
 var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
 		concat = require('gulp-concat'),
 		scss = require('gulp-sass'),
-		cssnano = require('gulp-cssnano'),
-		sasslint = require('gulp-sass-lint');
+		cssnano = require('gulp-cssnano');
 
 // Asset Paths
 var scssPath = './peachy-components/peachy.scss',
@@ -19,7 +15,7 @@ var scssPath = './peachy-components/peachy.scss',
 // ========================================
 // Default Gulp task
 // ========================================
-gulp.task('default', function(){
+gulp.task('default', function() {
 	console.log('Gulp, reporting in, ready for service!');
 });
 
@@ -29,6 +25,7 @@ gulp.task('default', function(){
 // Build CSS Assets for Development
 gulp.task("build-dev-css", function () {
   gulp.src(scssPath)
+			.pipe(concat('custom.css'))
 			.pipe(scss().on('error', scss.logError))
 			.pipe(gulp.dest(compiledCSSPath));
 });
@@ -36,17 +33,10 @@ gulp.task("build-dev-css", function () {
 // Build CSS Assets for Production
 gulp.task("build-prod-css", function () {
 	gulp.src(scssPath)
+			.pipe(concat('custom.css'))
 			.pipe(scss().on('error', scss.logError))
 			.pipe(cssnano())
 			.pipe(gulp.dest(compiledCSSPath));
-});
-
-// Linter
-gulp.task('sass-lint', function () {
-  return gulp.src(scssPath)
-    .pipe(sasslint({ configFile: 'sass-lint.yml' }))
-    .pipe(sasslint.format())
-    .pipe(sasslint.failOnError());
 });
 
 // ========================================
@@ -59,5 +49,5 @@ gulp.task('build', ['build-prod-css']);
 // =====================================================
 gulp.task('watch', function() {
 	console.log("I'm watching you...");
-	gulp.watch(scssWatchPath, ['sass-lint', 'build-dev-css']);
+	gulp.watch(scssWatchPath, ['build-dev-css']);
 });
