@@ -5,6 +5,8 @@
 
 //
 .row {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   width: 100%;
   &::after {
@@ -14,10 +16,17 @@
   }
 }
 
+.flex-errbody [class*="col-"],
+.flex-children {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-flex-content { display: block; }
+
 [class*="col-"] {
   position: relative;
   margin: $top-gutter $side-gutter $bottom-gutter;
-  padding: 20px;
   min-height: 20px;
   float: left;
   &::after {
@@ -27,37 +36,30 @@
   }
 }
 
-// Add .colored-columns to a row to add a default background-color to columns
-.colored-columns {
-  [class*="col-"] { background: $column-color; }
-  [class*="col-"] [class*="col-"] { background: darken($column-color, 10%); }
-}
-
-
 // Columns
-.col-1 { width: $full; }
-.col-4-5 { width: $four-fifth; }
-.col-3-4 { width: $three-quarter; }
-.col-2-3 { width: $two-third; }
-.col-3-5 { width: $three-fifth; }
-.col-2 { width: $half; }
-.col-2-5 { width: $two-fifth; }
-.col-3 { width: $third; }
-.col-4 { width: $quarter; }
-.col-5 { width: $fifth; }
+.col-100 { width: $full; }
+.col-80 { width: $four-fifth; }
+.col-75 { width: $three-quarter; }
+.col-66 { width: $two-third; }
+.col-60 { width: $three-fifth; }
+.col-50 { width: $half; }
+.col-40 { width: $two-fifth; }
+.col-33 { width: $third; }
+.col-25 { width: $quarter; }
+.col-20 { width: $fifth; }
 
 
 // Columns without Gutters
 .no-gutter {
   margin: 0;
-  &.col-1 { width: $full-no-gutter; }
-  &.col-4-5 { width: $four-fifth-no-gutter; }
-  &.col-3-4 { width: $three-quarter-no-gutter; }
-  &.col-2-3 { width: $two-third-no-gutter; }
-  &.col-3-5 { width: $three-fifth-no-gutter; }
-  &.col-2 { width: $half-no-gutter; }
-  &.col-2-5 { width: $two-fifth-no-gutter; }
-  &.col-3 { width: $third-no-gutter; }
-  &.col-4 { width: $quarter-no-gutter; }
-  &.col-5 { width: $fifth-no-gutter; }
+  &.col-100 { width: $full-no-gutter; }
+  &.col-80 { width: $four-fifth-no-gutter; }
+  &.col-75 { width: $three-quarter-no-gutter; }
+  &.col-66 { width: $two-third-no-gutter; }
+  &.col-60 { width: $three-fifth-no-gutter; }
+  &.col-50 { width: $half-no-gutter; }
+  &.col-40 { width: $two-fifth-no-gutter; }
+  &.col-33 { width: $third-no-gutter; }
+  &.col-25 { width: $quarter-no-gutter; }
+  &.col-20 { width: $fifth-no-gutter; }
 }

@@ -40,8 +40,8 @@
 
   <!-- Custom CSS -->
   <!-- You want to have your CSS as the very first asset that the HTML requests. - Harry Roberts -->
-  <link rel="stylesheet" type="text/css" href="../peachy.css" />
-  <link rel="stylesheet" type="text/css" href="./peachy-demo.css" />
+  <link rel="stylesheet" type="text/css" href="../custom.css" />
+  <link rel="stylesheet" type="text/css" href="peachy-demo.css" />
 
   <!-- ICONS -->
   <link rel="apple-touch-icon" href="images/peachy-favicon.png">
@@ -54,14 +54,14 @@
 <body>
   <div class="site-container">
     <nav class="nav row">
-      <header class="nav-header col-1 no-gutter">
+      <header class="nav-header col-100 no-gutter">
         <a href="#" class="logo">
           <img class="logo__image" src="images/peachy.svg" alt="">
           <h3 class="logo__header">Peachy</h3>
           <h4 class="logo__subheader">SCSS Grid</h4>
         </a>
       </header>
-      <div class="nav-content col-1 no-gutter">
+      <div class="nav-content col-100 no-gutter">
         <a href="#" class="mobile-menu-button">
           <span class="menu-dash top"></span>
           <span class="menu-dash middle"></span>
@@ -79,7 +79,7 @@
     <!-- End Nav -->
     <main class="main-container">
       <div class="row">
-        <div class="banner col-1 no-gutter">
+        <div class="banner col-100 no-gutter">
           <div class="banner-content">
             <img class="banner-logo" src="images/peachy.svg" alt="">
             <h1 class="banner-title">Peachy</h1>
@@ -89,136 +89,271 @@
         </div>
       </div>
       <div class="row center-column ">
-        <div class="col-1 no-padding">
+        <div class="col-100 no-padding">
           <h2 class="section-header" id="columning">Columning</h2>
         </div>
       </div>
 
       <div class="row center-column ">
-        <div class="col-1 no-padding">
+        <div class="col-100 no-padding">
           <h3 class="subsection-header">Column Options</h3>
-          <p>Peachy currently supports up to 5 columns. I haven't needed more than that so far, but I'm willing to add more if someone needs it.</p>
+          <p>Peachy supports <code>100%</code>, <code>80%</code>, <code>75%</code>, <code>66.6666%</code>, <code>60%</code>, <code>50%</code>, <code>40%</code>, <code>33.3333%</code>, <code>25%</code>, and <code>20%</code>.</p>
         </div>
       </div>
 
       <div class="row center-column colored-columns">
-        <!--  -->
-        <div class="col-1">
-          <label>Column: .col-1</label>
+        <!-- 100% -->
+        <div class="col-100">
+          <label>Column: .col-100</label>
         </div>
 
 
-        <!--  -->
-        <div class="col-1 bp-l-4-5">
-          <label>Column: .col-4-5</label>
+        <!-- 80%/20% -->
+        <div class="col-100 bp-l-80">
+          <label>Column: .col-80</label>
         </div>
-        <div class="col-1 bp-l-5">
-          <label>Column: .col-5</label>
-        </div>
-
-
-        <!--  -->
-        <div class="col-1 bp-l-3-4">
-          <label>Column: .col-3-4</label>
-        </div>
-        <div class="col-1 bp-l-4">
-          <label>Column: .col-4</label>
+        <div class="col-100 bp-l-20">
+          <label>Column: .col-20</label>
         </div>
 
 
-        <!--  -->
-        <div class="col-1 bp-l-2-3">
-          <label>Column: .col-2-3</label>
+        <!-- 75%/25% -->
+        <div class="col-100 bp-l-75">
+          <label>Column: .col-75</label>
         </div>
-        <div class="col-1 bp-l-3">
-          <label>Column: .col-3</label>
-        </div>
-
-        <!--  -->
-        <div class="col-1 bp-l-3-5">
-          <label>Column: .col-3-5</label>
-        </div>
-        <div class="col-1 bp-l-2-5">
-          <label>Column: .col-2-5</label>
+        <div class="col-100 bp-l-25">
+          <label>Column: .col-25</label>
         </div>
 
-        <!-- Halfs -->
-        <div class="col-1 bp-l-2">
-          <label>Column: .col-2</label>
+        <!-- 66.6666%/33.3333% -->
+        <div class="col-100 bp-l-66">
+          <label>Column: .col-66</label>
         </div>
-        <div class="col-1 bp-l-2">
-          <label>Column: .col-2</label>
-        </div>
-
-        <!--  -->
-        <div class="col-1 bp-l-2-5">
-          <label>Column: .col-2-5</label>
-        </div>
-        <div class="col-1 bp-l-3-5">
-          <label>Column: .col-3-5</label>
+        <div class="col-100 bp-l-33">
+          <label>Column: .col-33</label>
         </div>
 
-        <!-- Thirds -->
-        <div class="col-1 bp-l-3">
-          <label>Column: .col-3</label>
+        <!-- 60%/40% -->
+        <div class="col-100 bp-l-60">
+          <label>Column: .col-60</label>
         </div>
-        <div class="col-1 bp-l-3">
-          <label>Column: .col-3</label>
-        </div>
-        <div class="col-1 bp-l-3">
-          <label>Column: .col-3</label>
+        <div class="col-100 bp-l-40">
+          <label>Column: .col-40</label>
         </div>
 
-        <!-- Fourths -->
-        <div class="col-1 bp-l-4">
-          <label>Column: .col-4</label>
+        <!-- 50%/50% -->
+        <div class="col-100 bp-l-50">
+          <label>Column: .col-50</label>
         </div>
-        <div class="col-1 bp-l-4">
-          <label>Column: .col-4</label>
-        </div>
-        <div class="col-1 bp-l-4">
-          <label>Column: .col-4</label>
-        </div>
-        <div class="col-1 bp-l-4">
-          <label>Column: .col-4</label>
+        <div class="col-100 bp-l-50">
+          <label>Column: .col-50</label>
         </div>
 
-        <!-- Fifths -->
-        <div class="col-1 bp-l-5">
-          <label>Column: .col-5</label>
+        <!-- 40%/60% -->
+        <div class="col-100 bp-l-40">
+          <label>Column: .col-40</label>
         </div>
-        <div class="col-1 bp-l-5">
-          <label>Column: .col-5</label>
+        <div class="col-100 bp-l-60">
+          <label>Column: .col-60</label>
         </div>
-        <div class="col-1 bp-l-5">
-          <label>Column: .col-5</label>
+
+        <!-- Thirds (33.3333%) -->
+        <div class="col-100 bp-l-33">
+          <label>Column: .col-33</label>
         </div>
-        <div class="col-1 bp-l-5">
-          <label>Column: .col-5</label>
+        <div class="col-100 bp-l-33">
+          <label>Column: .col-33</label>
         </div>
-        <div class="col-1 bp-l-5">
-          <label>Column: .col-5</label>
+        <div class="col-100 bp-l-33">
+          <label>Column: .col-33</label>
+        </div>
+
+        <!-- Fourths (25%) -->
+        <div class="col-100 bp-l-25">
+          <label>Column: .col-25</label>
+        </div>
+        <div class="col-100 bp-l-25">
+          <label>Column: .col-25</label>
+        </div>
+        <div class="col-100 bp-l-25">
+          <label>Column: .col-25</label>
+        </div>
+        <div class="col-100 bp-l-25">
+          <label>Column: .col-25</label>
+        </div>
+
+        <!-- Fifths (20%) -->
+        <div class="col-100 bp-l-20">
+          <label>Column: .col-20</label>
+        </div>
+        <div class="col-100 bp-l-20">
+          <label>Column: .col-20</label>
+        </div>
+        <div class="col-100 bp-l-20">
+          <label>Column: .col-20</label>
+        </div>
+        <div class="col-100 bp-l-20">
+          <label>Column: .col-20</label>
+        </div>
+        <div class="col-100 bp-l-20">
+          <label>Column: .col-20</label>
+        </div>
+
+      </div>
+
+      
+      <style>
+        .pinterest-images .col-33 {
+          background-color: transparent;
+        }
+        .pinterest-images .col-100 {
+          /*min-height: 200px;*/
+          background-image: url('https://s-media-cache-ak0.pinimg.com/550x/18/78/a0/1878a070070fc5cae40551e1fb1a8a3a.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          color: #ffffff;
+          border-radius: 10px;
+        }
+
+      </style>
+      
+      <div class="row center-column colored-columns pinterest-images">
+        <div class="col-33 no-padding no-gutter">
+          <div class="col-100">1</div>
+          <div class="col-100">2</div>
+          <div class="col-100">3</div>
+          <div class="col-100">4</div>
+          <div class="col-100">4</div>
+          <div class="col-100">6 Hello, I'm a bunch of words that are here to take up space!</div>
+          <div class="col-100">7</div>
+          <div class="col-100">8</div>
+          <div class="col-100">9</div>
+          <div class="col-100">10</div>
+        </div>
+        <div class="col-33 no-padding no-gutter">
+          <div class="col-100">Hello, I'm a bunch of words that are here to take up space!</div>
+          <div class="col-100">Hello, I'm a bunch of words that are here to take up space!</div>
+          <div class="col-100"></div>
+          <div class="col-100"></div>
+          <div class="col-100">Hello, I'm a bunch of words that are here to take up space!</div>
+          <div class="col-100"></div>
+          <div class="col-100"></div>
+          <div class="col-100">Hello, I'm a bunch of words that are here to take up space!</div>
+          <div class="col-100"></div>
+        </div>
+        <div class="col-33 no-padding no-gutter">
+          <div class="col-100"></div>
+          <div class="col-100">Hello, I'm a bunch of words that are here to take up space!</div>
+          <div class="col-100"></div>
+          <div class="col-100">Hello, I'm a bunch of words that are here to take up space!</div>
+          <div class="col-100">Hello, I'm a bunch of words that are here to take up space!</div>
+          <div class="col-100"></div>
+          <div class="col-100"></div>
+          <div class="col-100"></div>
+          <div class="col-100"></div>
+          <div class="col-100">Hello, I'm a bunch of words that are here to take up space!</div>
+        </div>
+      </div>
+
+
+      <!-- Column Nesting -->
+      <div class="row center-column ">
+        <div class="col-100 no-padding">
+          <h3 class="subsection-header">Nesting Columns</h3>
+          <p>You can nest any column inside others to create more sizes.</p>
+        </div>
+      </div>
+      <div class="row center-column colored-columns">
+        <div class="col-100 bp-l-50 no-padding no-gutter nesting-parent">
+          <div class="row">
+            <div class="col-100 bp-l-50 no-padding no-gutter nesting-parent">
+              <div class="row">
+                <div class="col-100 bp-l-50">
+                  <label>.col-50</label>
+                </div>
+                <div class="col-100 bp-l-50">
+                  <label>.col-50</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-100 bp-l-50">
+              <label>.col-50</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-100 bp-l-50 no-padding no-gutter nesting-parent">
+          <div class="row">
+            <div class="col-100 bp-l-33 no-padding no-gutter nesting-parent">
+              <div class="row">
+                <div class="col-100 bp-l-50">
+                  <label>16.66%</label>
+                </div>
+                <div class="col-100 bp-l-50">
+                  <label>16.66%</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-100 bp-l-33">
+              <label>.col-33</label>
+            </div>
+            <div class="col-100 bp-l-33">
+              <label>.col-33</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row center-column colored-columns">
+        <div class="col-100 bp-l-50 no-padding no-gutter nesting-parent">
+          <div class="col-100 bp-l-50 no-padding no-gutter nesting-parent">
+            <div class="col-100 bp-l-50">
+              <label>.col-50</label>
+            </div>
+            <div class="col-100 bp-l-50">
+              <label>.col-50</label>
+            </div>
+          </div>
+          <div class="col-100 bp-l-50">
+            <label>.col-50</label>
+          </div>
+        </div>
+        <div class="col-100 bp-l-50 no-padding no-gutter nesting-parent">
+          <div class="col-100 bp-l-33 no-padding no-gutter nesting-parent">
+            <div class="col-100 bp-l-50">
+              <label>16.66%</label>
+            </div>
+            <div class="col-100 bp-l-50">
+              <label>16.66%</label>
+            </div>
+          </div>
+          <div class="col-100 bp-l-33">
+            <label>.col-33</label>
+          </div>
+          <div class="col-100 bp-l-33">
+            <label>.col-33</label>
+          </div>
         </div>
       </div>
 
 
       <div class="row center-column ">
-        <div class="col-1 no-padding">
+        <div class="col-100 no-padding">
           <h2 class="section-header" id="breakpoints">Breakpoints</h2>
         </div>
       </div>
 
       <div class="row center-column ">
-        <div class="col-1 no-padding">
+        <div class="col-100 no-padding">
           <h3 class="subsection-header">Conditional Breakpoints</h3>
           <p>Conditional breakpoints allow you to change the column size at each specific breakpoint.</p>
           <p>For example:</p>
           <code>
-            &lt;div class="col-1 bp-l-2"&gt;&lt;/div&gt;
+            &lt;div class="col-100 bp-l-50"&gt;&lt;/div&gt;
             <br/>
-            &lt;div class="col-1 bp-l-2"&gt;&lt;/div&gt;
+            &lt;div class="col-100 bp-l-50"&gt;&lt;/div&gt;
           </code>
-          <p>will create 2 1 column things up until the large breakpoint, where they will then both become 2 column things.</p>
+          <p>will create 2 columns that are <code>100%</code> wide until the large breakpoint, where they will then both become <code>50%</code> wide.</p>
           <h4>Gutters</h4>
           <ul>
             <li><code>side-gutter: 10px</code></li>
@@ -229,106 +364,90 @@
       </div>
 
       <div class="breakpoints row center-column colored-columns">
-        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
-          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+        <div class="col-100 bp-s-100 bp-m-50 bp-l-33 bp-xl-25 bp-xxl-20">
+          <label>.col-100<br/>.bp-s-100<br/>.bp-m-50<br/>.bp-l-33<br/>.bp-xl-25<br/>.bp-xxl-20</label>
         </div>
-        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
-          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+        <div class="col-100 bp-s-100 bp-m-50 bp-l-33 bp-xl-25 bp-xxl-20">
+          <label>.col-100<br/>.bp-s-100<br/>.bp-m-50<br/>.bp-l-33<br/>.bp-xl-25<br/>.bp-xxl-20</label>
         </div>
-        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
-          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+        <div class="col-100 bp-s-100 bp-m-50 bp-l-33 bp-xl-25 bp-xxl-20">
+          <label>.col-100<br/>.bp-s-100<br/>.bp-m-50<br/>.bp-l-33<br/>.bp-xl-25<br/>.bp-xxl-20</label>
         </div>
-        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
-          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+        <div class="col-100 bp-s-100 bp-m-50 bp-l-33 bp-xl-25 bp-xxl-20">
+          <label>.col-100<br/>.bp-s-100<br/>.bp-m-50<br/>.bp-l-33<br/>.bp-xl-25<br/>.bp-xxl-20</label>
         </div>
-        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-4 bp-xxl-5">
-          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-4.<br/>.bp-xxl-5</label>
+        <div class="col-100 bp-s-100 bp-m-50 bp-l-33 bp-xl-25 bp-xxl-20">
+          <label>.col-100<br/>.bp-s-100<br/>.bp-m-50<br/>.bp-l-33<br/>.bp-xl-25<br/>.bp-xxl-20</label>
         </div>
-        <div class="col-1 bp-s-1 bp-m-2 bp-l-3 bp-xl-3-4 bp-xxl-1">
-          <label>.col-1<br/>.bp-s-1<br/>.bp-m-2<br/>.bp-l-3<br/>.bp-xl-3-4<br/>.bp-xxl-1</label>
+        <div class="col-100 bp-s-100 bp-m-50 bp-l-33 bp-xl-25 bp-xxl-20">
+          <label>.col-100<br/>.bp-s-100<br/>.bp-m-50<br/>.bp-l-33<br/>.bp-xl-25<br/>.bp-xxl-20</label>
+        </div>
+        <div class="col-100 bp-s-100 bp-m-50 bp-l-33 bp-xl-50 bp-xxl-80">
+          <label>.col-100<br/>.bp-s-100<br/>.bp-m-50<br/>.bp-l-33<br/>.bp-xl-75<br/>.bp-xxl-100</label>
+        </div>
+        <div class="col-100 bp-m-50 bp-l-66 bp-xl-100">
+          <label>.col-100<br/>.bp-m-50<br/>.bp-l-66<br/>.bp-xl-100</label>
         </div>
       </div>
 
 
       <div class="row center-column ">
-        <div class="col-1 no-padding">
+        <div class="col-100 no-padding">
           <h2 class="section-header" id="utility-classes">Utility Classes</h2>
         </div>
       </div>
 
-
-      <div class="row center-column ">
-        <div class="col-1 no-padding">
-          <h3 class="subsection-header">No Padding (.no-padding)</h3>
-          <p>The <code>.no-padding</code> utility class removes the padding from columns.</p>
-        </div>
-      </div>
-
-      <div class="row center-column colored-columns">
-        <div class="col-1 no-padding">
-          <div class="col-1 bp-l-2 no-padding"><label>.col-2.no-padding</label></div>
-          <div class="col-1 bp-l-2 no-padding"><label>.col-2.no-padding</label></div>
-          <div class="col-1 bp-l-3 no-padding"><label>.col-3.no-padding</label></div>
-          <div class="col-1 bp-l-3 no-padding"><label>.col-3.no-padding</label></div>
-          <div class="col-1 bp-l-3 no-padding"><label>.col-3.no-padding</label></div>
-          <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
-          <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
-          <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
-          <div class="col-1 bp-l-4 no-padding"><label>.col-4.no-padding</label></div>
-        </div>
-      </div>
-
-      <div class="row center-column ">
-        <div class="col-1 no-padding">
+      <div class="row center-column">
+        <div class="col-100 no-padding">
           <h3 class="subsection-header">No Gutter (.no-gutter)</h3>
           <p>The <code>.no-gutter</code> utility class removes the gutters from columns.</p>
         </div>
       </div>
 
       <div class="row center-column colored-columns">
-        <div class="col-1 no-padding">
-          <div class="col-1 bp-l-2 no-gutter"><label>.col-2.no-gutter</label></div>
-          <div class="col-1 bp-l-2 no-gutter"><label>.col-2.no-gutter</label></div>
-          <div class="col-1 bp-l-3 no-gutter"><label>.col-3.no-gutter</label></div>
-          <div class="col-1 bp-l-3 no-gutter"><label>.col-3.no-gutter</label></div>
-          <div class="col-1 bp-l-3 no-gutter"><label>.col-3.no-gutter</label></div>
-          <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
-          <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
-          <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
-          <div class="col-1 bp-l-4 no-gutter"><label>.col-4.no-gutter</label></div>
+        <div class="col-100 no-padding">
+          <div class="col-100 bp-l-50 no-gutter"><label>.col-50.no-gutter</label></div>
+          <div class="col-100 bp-l-50 no-gutter"><label>.col-50.no-gutter</label></div>
+          <div class="col-100 bp-l-33 no-gutter"><label>.col-33.no-gutter</label></div>
+          <div class="col-100 bp-l-33 no-gutter"><label>.col-33.no-gutter</label></div>
+          <div class="col-100 bp-l-33 no-gutter"><label>.col-33.no-gutter</label></div>
+          <div class="col-100 bp-l-25 no-gutter"><label>.col-25.no-gutter</label></div>
+          <div class="col-100 bp-l-25 no-gutter"><label>.col-25.no-gutter</label></div>
+          <div class="col-100 bp-l-25 no-gutter"><label>.col-25.no-gutter</label></div>
+          <div class="col-100 bp-l-25 no-gutter"><label>.col-25.no-gutter</label></div>
         </div>
       </div>
 
       <div class="row center-column ">
-        <div class="col-1 no-padding">
+        <div class="col-100 no-padding">
           <h3 class="subsection-header">Hide at Breakpoint (.hide-<em>breakpoint</em>)</h3>
             <p>These are used for hiding specific columns at one or multiple breakpoints.</p>
         </div>
       </div>
 
-      <div class="row center-column  colored-columns">
-        <div class="col-1 bp-l-2 hide-s hide-color-1"><label>.col-2<br/>.hide-s</label></div>
-        <div class="col-1 bp-l-2 hide-s hide-color-1"><label>.col-2<br/>.hide-s</label></div>
-        <div class="col-1 bp-l-2 hide-m hide-color-2"><label>.col-2<br/>.hide-m</label></div>
-        <div class="col-1 bp-l-2 hide-m hide-color-2"><label>.col-2<br/>.hide-m</label></div>
-        <div class="col-1 bp-l-2 hide-s hide-m hide-l hide-color-3"><label>.col-2<br/>.hide-l.hide-m.hide-s</label></div>
-        <div class="col-1 bp-l-2 hide-s hide-m hide-l hide-color-3"><label>.col-2<br/>.hide-l.hide-m.hide-s</label></div>
-        <div class="col-1 bp-l-2 hide-xl hide-color-4"><label>.col-2<br/>.hide-xl</label></div>
-        <div class="col-1 bp-l-2 hide-xl hide-color-4"><label>.col-2<br/>.hide-xl</label></div>
-        <div class="col-1 bp-l-2 hide-xxl hide-color-5"><label>.col-2<br/>.hide-xxl</label></div>
-        <div class="col-1 bp-l-2 hide-xxl hide-color-5"><label>.col-2<br/>.hide-xxl</label></div>
+      <div class="row center-column colored-columns debug">
+        <div class="col-100 bp-l-50 hide-s hide-color-1"><label>.col-50<br/>.hide-s</label></div>
+        <div class="col-100 bp-l-50 hide-s hide-color-1"><label>.col-50<br/>.hide-s</label></div>
+        <div class="col-100 bp-l-50 hide-m hide-color-2"><label>.col-50<br/>.hide-m</label></div>
+        <div class="col-100 bp-l-50 hide-m hide-color-2"><label>.col-50<br/>.hide-m</label></div>
+        <div class="col-100 bp-l-50 hide-s hide-m hide-l hide-color-33"><label>.col-50<br/>.hide-l.hide-m.hide-s</label></div>
+        <div class="col-100 bp-l-50 hide-s hide-m hide-l hide-color-33"><label>.col-50<br/>.hide-l.hide-m.hide-s</label></div>
+        <div class="col-100 bp-l-50 hide-xl hide-color-25"><label>.col-50<br/>.hide-xl</label></div>
+        <div class="col-100 bp-l-50 hide-xl hide-color-25"><label>.col-50<br/>.hide-xl</label></div>
+        <div class="col-100 bp-l-50 hide-xxl hide-color-20"><label>.col-50<br/>.hide-xxl</label></div>
+        <div class="col-100 bp-l-50 hide-xxl hide-color-20"><label>.col-50<br/>.hide-xxl</label></div>
       </div>
 
 
 
       <div class="row center-column ">
-        <div class="col-1 no-padding">
+        <div class="col-100 no-padding">
           <h2 class="section-header" id="usage">Setup &amp; Usage</h2>
         </div>
       </div>
 
       <div class="row center-column ">
-        <div class="col-1 no-padding">
+        <div class="col-100 no-padding">
           <h3 class="subsection-header">Peachy Config</h3>
           <p>The Peachy Defaults are as follows: </p>
           <h4>Gutters</h4>
@@ -370,14 +489,51 @@
       </div>
 
       <div class="row center-column ">
-        <div class="col-1 no-padding">
-          <h2 class="section-header" id="demos">Demo Sites</h2>
+        <div class="col-100 no-padding">
+          <h2 class="section-header" id="demos">Demos</h2>
+        </div>
+      </div>
+
+      <style>
+        .test-nesting img {
+          display: block;
+          max-width: 100%;
+        }
+
+        .no-flex-content {
+          display: block !important;
+        }
+      </style>
+      
+      <div class="row center-column colored-columns test-nesting flex-all-children">
+        <div class="col-80 no-padding no-gutter nesting-parent">
+          <div class="col-75 no-padding no-gutter nesting-parent">
+            <div class="col-50 no-flex-content">
+              <img src="https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg" alt="">
+              <h3>Brad Moore</h3>
+              <p>This is Brad. Brad is a producer in Chicago, Illinois. He loves what he does.</p>
+            </div>
+            <div class="col-50 no-flex-content">
+              <img src="https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg" alt="">
+              <h3>Brad Moore</h3>
+              <p>This is Brad. Brad is a producer in Chicago, Illinois. He loves what he does.</p>
+              <p>This is Brad. Brad is a producer in Chicago, Illinois. He loves what he does.</p>
+            </div>
+          </div>
+          <div class="col-25 no-padding no-gutter nesting-parent">
+            <div class="col-50"></div>
+            <div class="col-50"></div>
+          </div>
+        </div>
+        <div class="col-20 no-padding no-gutter nesting-parent">
+          <div class="col-50"></div>
+          <div class="col-50"></div>
         </div>
       </div>
 
 
       <footer class="row">
-        <div class="footer col-1 no-gutter">
+        <div class="footer col-100 no-gutter">
           <p class="the-mob">A product of <a href="http://wallabymob.com">The Mob</a></p>
         </div>
       </footer>

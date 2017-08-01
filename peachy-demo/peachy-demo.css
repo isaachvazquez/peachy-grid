@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 
+
+:root {
+  /* Colors */
+  --peach: #FF8B53;
+  --light-peach: #FFEBBB;
+  --green: #7FDE66;
+  --white: #ffffff;
+  --column-color: #efefef;
+  --nested-column-color: #d6d6d6;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -54,11 +65,14 @@ li {
 }
 
 /* Column Overrides */
-[class*="col-"] { border-radius: 2px; }
-
-[class*="col-"] [class*="col-"] {
-  border-radius: 0;
+[class*="col-"] {
+  padding: 20px;
+  border-radius: 2px;
 }
+
+.no-padding { padding: 0; }
+
+[class*="col-"] [class*="col-"] { border-radius: 0; }
 
 [class*="col-"] label {
   display: block;
@@ -87,7 +101,7 @@ li {
   z-index: 9;
   width: 250px;
   height: 100vh;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 @media (min-width: 1400px) {
@@ -180,7 +194,7 @@ li {
     top: 100%;
     left: 0;
     width: 100%;
-    background: #333333;
+    background-color: #333333;
     transform: translateY(0);
     transition: transform 0.3s;
   }
@@ -197,7 +211,7 @@ li {
     padding: 10px;
     width: 50px;
     min-height: 20px;
-    background: #333333;
+    background-color: #333333;
     transform: translate(-50%, -100%);
     box-shadow: 0 10px 20px #8c8c8c;
   }
@@ -211,7 +225,7 @@ li {
     width: 100px;
     height: 100%;
     transform: translateX(-50%);
-    background: inherit;
+    background-color: inherit;
   }
 
   .menu-dash {
@@ -219,7 +233,7 @@ li {
     margin-bottom: 5px;
     width: 100%;
     height: 3px;
-    background: #ffffff;
+    background-color: #ffffff;
   }
   .menu-dash:last-child { margin-bottom: 0; }
   .menu-dash.top {}
@@ -311,13 +325,13 @@ code {
   padding: 5px 7px;
   text-align: left;
   line-height: 20px;
-  background: #f5f5f5;
+  background-color: #f5f5f5;
   border-radius: 2px;
 }
 
 code.dark {
   color: #FF8B53;
-  background: #2d2d2d;
+  background-color: #2d2d2d;
 }
 
 
@@ -339,13 +353,29 @@ code.dark {
   .subsection-header { margin-top: 0; }
 }
 
+/* Add .colored-columns to a row to add a default background-color to columns */
+.colored-columns [class*="col-"] { background-color: var(--column-color); }
+.colored-columns [class*="col-"] [class*="col-"] { background-color: var(--nested-column-color); }
+
+.nesting-parent,
+.colored-columns .nesting-parent {
+  background-color: transparent !important;
+  border: 2px dashed var(--green);
+}
+
+.nesting-parent .nesting-parent,
+.colored-columns .nesting-parent .nesting-parent {
+  background-color: transparent;
+  border: 2px dashed var(--peach);
+}
+
 
 /* Hide Colors */
-.colored-columns .hide-color-1 { background: #5ddad1; }
-.colored-columns .hide-color-2 { background: #e7a6f5; }
-.colored-columns .hide-color-3 { background: #a6f5c0; }
-.colored-columns .hide-color-4 { background: #f5b98b; }
-.colored-columns .hide-color-5 { background: #ff8498; }
+.colored-columns .hide-color-1 { background-color: #5ddad1; }
+.colored-columns .hide-color-2 { background-color: #e7a6f5; }
+.colored-columns .hide-color-3 { background-color: #a6f5c0; }
+.colored-columns .hide-color-4 { background-color: #f5b98b; }
+.colored-columns .hide-color-5 { background-color: #ff8498; }
 
 
 /* Footer */

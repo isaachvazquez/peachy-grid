@@ -4,141 +4,141 @@
 
 // S Breakpoint
 @media (min-width: $breakpoint-s) {
-  .bp-s-1 { width: $full; }
-  .bp-s-4-5 { width: $four-fifth; }
-  .bp-s-3-4 { width: $three-quarter; }
-  .bp-s-2-3 { width: $two-third; }
-  .bp-s-3-5 { width: $three-fifth; }
-  .bp-s-2 { width: $half; }
-  .bp-s-2-5 { width: $two-fifth; }
-  .bp-s-3 { width: $third; }
-  .bp-s-4 { width: $quarter; }
-  .bp-s-5 { width: $fifth; }
+  .bp-s-100 { width: $full; }
+  .bp-s-80 { width: $four-fifth; }
+  .bp-s-75 { width: $three-quarter; }
+  .bp-s-66 { width: $two-third; }
+  .bp-s-60 { width: $three-fifth; }
+  .bp-s-50 { width: $half; }
+  .bp-s-40 { width: $two-fifth; }
+  .bp-s-33 { width: $third; }
+  .bp-s-25 { width: $quarter; }
+  .bp-s-20 { width: $fifth; }
 
   // no-gutter scoped breakpoint
   .no-gutter {
-    &.bp-s-1 { width: $full-no-gutter; }
-    &.bp-s-4-5 { width: $four-fifth-no-gutter; }
-    &.bp-s-3-4 { width: $three-quarter-no-gutter; }
-    &.bp-s-2-3 { width: $two-third-no-gutter; }
-    &.bp-s-3-5 { width: $three-fifth-no-gutter; }
-    &.bp-s-2 { width: $half-no-gutter; }
-    &.bp-s-2-5 { width: $two-fifth-no-gutter; }
-    &.bp-s-3 { width: $third-no-gutter; }
-    &.bp-s-4 { width: $quarter-no-gutter; }
-    &.bp-s-5 { width: $fifth-no-gutter; }
+    &.bp-s-100 { width: $full-no-gutter; }
+    &.bp-s-80 { width: $four-fifth-no-gutter; }
+    &.bp-s-75 { width: $three-quarter-no-gutter; }
+    &.bp-s-66 { width: $two-third-no-gutter; }
+    &.bp-s-60 { width: $three-fifth-no-gutter; }
+    &.bp-s-50 { width: $half-no-gutter; }
+    &.bp-s-40 { width: $two-fifth-no-gutter; }
+    &.bp-s-33 { width: $third-no-gutter; }
+    &.bp-s-25 { width: $quarter-no-gutter; }
+    &.bp-s-20 { width: $fifth-no-gutter; }
   }
 }
 
 // M Breakpoint
 @media (min-width: $breakpoint-m) {
-  .bp-m-1 { width: $full; }
-  .bp-m-4-5 { width: $four-fifth; }
-  .bp-m-3-4 { width: $three-quarter; }
-  .bp-m-2-3 { width: $two-third; }
-  .bp-m-3-5 { width: $three-fifth; }
-  .bp-m-2 { width: $half; }
-  .bp-m-2-5 { width: $two-fifth; }
-  .bp-m-3 { width: $third; }
-  .bp-m-4 { width: $quarter; }
-  .bp-m-5 { width: $fifth; }
+  .bp-m-100 { width: $full; }
+  .bp-m-80 { width: $four-fifth; }
+  .bp-m-75 { width: $three-quarter; }
+  .bp-m-66 { width: $two-third; }
+  .bp-m-60 { width: $three-fifth; }
+  .bp-m-50 { width: $half; }
+  .bp-m-40 { width: $two-fifth; }
+  .bp-m-33 { width: $third; }
+  .bp-m-25 { width: $quarter; }
+  .bp-m-20 { width: $fifth; }
 
   // no-gutter scoped breakpoint
   .no-gutter {
-    &.bp-m-1 { width: $full-no-gutter; }
-    &.bp-m-4-5 { width: $four-fifth-no-gutter; }
-    &.bp-m-3-4 { width: $three-quarter-no-gutter; }
-    &.bp-m-2-3 { width: $two-third-no-gutter; }
-    &.bp-m-3-5 { width: $three-fifth-no-gutter; }
-    &.bp-m-2 { width: $half-no-gutter; }
-    &.bp-m-2-5 { width: $two-fifth-no-gutter; }
-    &.bp-m-3 { width: $third-no-gutter; }
-    &.bp-m-4 { width: $quarter-no-gutter; }
-    &.bp-m-5 { width: $fifth-no-gutter; }
+    &.bp-m-100 { width: $full-no-gutter; }
+    &.bp-m-80 { width: $four-fifth-no-gutter; }
+    &.bp-m-75 { width: $three-quarter-no-gutter; }
+    &.bp-m-66 { width: $two-third-no-gutter; }
+    &.bp-m-60 { width: $three-fifth-no-gutter; }
+    &.bp-m-50 { width: $half-no-gutter; }
+    &.bp-m-40 { width: $two-fifth-no-gutter; }
+    &.bp-m-33 { width: $third-no-gutter; }
+    &.bp-m-25 { width: $quarter-no-gutter; }
+    &.bp-m-20 { width: $fifth-no-gutter; }
   }
 }
 
 // L Breakpoint
 @media (min-width: $breakpoint-l) {
-  .bp-l-1 { width: $full; }
-  .bp-l-4-5 { width: $four-fifth; }
-  .bp-l-3-4 { width: $three-quarter; }
-  .bp-l-2-3 { width: $two-third; }
-  .bp-l-3-5 { width: $three-fifth; }
-  .bp-l-2 { width: $half; }
-  .bp-l-2-5 { width: $two-fifth; }
-  .bp-l-3 { width: $third; }
-  .bp-l-4 { width: $quarter; }
-  .bp-l-5 { width: $fifth; }
+  .bp-l-100 { width: $full; }
+  .bp-l-80 { width: $four-fifth; }
+  .bp-l-75 { width: $three-quarter; }
+  .bp-l-66 { width: $two-third; }
+  .bp-l-60 { width: $three-fifth; }
+  .bp-l-50 { width: $half; }
+  .bp-l-40 { width: $two-fifth; }
+  .bp-l-33 { width: $third; }
+  .bp-l-25 { width: $quarter; }
+  .bp-l-20 { width: $fifth; }
 
   // no-gutter scoped breakpoint
   .no-gutter {
-    &.bp-l-1 { width: $full-no-gutter; }
-    &.bp-l-4-5 { width: $four-fifth-no-gutter; }
-    &.bp-l-3-4 { width: $three-quarter-no-gutter; }
-    &.bp-l-2-3 { width: $two-third-no-gutter; }
-    &.bp-l-3-5 { width: $three-fifth-no-gutter; }
-    &.bp-l-2 { width: $half-no-gutter; }
-    &.bp-l-2-5 { width: $two-fifth-no-gutter; }
-    &.bp-l-3 { width: $third-no-gutter; }
-    &.bp-l-4 { width: $quarter-no-gutter; }
-    &.bp-l-5 { width: $fifth-no-gutter; }
+    &.bp-l-100 { width: $full-no-gutter; }
+    &.bp-l-80 { width: $four-fifth-no-gutter; }
+    &.bp-l-75 { width: $three-quarter-no-gutter; }
+    &.bp-l-66 { width: $two-third-no-gutter; }
+    &.bp-l-60 { width: $three-fifth-no-gutter; }
+    &.bp-l-50 { width: $half-no-gutter; }
+    &.bp-l-40 { width: $two-fifth-no-gutter; }
+    &.bp-l-33 { width: $third-no-gutter; }
+    &.bp-l-25 { width: $quarter-no-gutter; }
+    &.bp-l-20 { width: $fifth-no-gutter; }
   }
 }
 
 
 // XL Breakpoint
 @media (min-width: $breakpoint-xl) {
-  .bp-xl-1 { width: $full; }
-  .bp-xl-4-5 { width: $four-fifth; }
-  .bp-xl-3-4 { width: $three-quarter; }
-  .bp-xl-2-3 { width: $two-third; }
-  .bp-xl-3-5 { width: $three-fifth; }
-  .bp-xl-2 { width: $half; }
-  .bp-xl-2-5 { width: $two-fifth; }
-  .bp-xl-3 { width: $third; }
-  .bp-xl-4 { width: $quarter; }
-  .bp-xl-5 { width: $fifth; }
+  .bp-xl-100 { width: $full; }
+  .bp-xl-80 { width: $four-fifth; }
+  .bp-xl-75 { width: $three-quarter; }
+  .bp-xl-66 { width: $two-third; }
+  .bp-xl-60 { width: $three-fifth; }
+  .bp-xl-50 { width: $half; }
+  .bp-xl-40 { width: $two-fifth; }
+  .bp-xl-33 { width: $third; }
+  .bp-xl-25 { width: $quarter; }
+  .bp-xl-20 { width: $fifth; }
 
   // no-gutter scoped breakpoint
   .no-gutter {
-    &.bp-xl-1 { width: $full-no-gutter; }
-    &.bp-xl-4-5 { width: $four-fifth-no-gutter; }
-    &.bp-xl-3-4 { width: $three-quarter-no-gutter; }
-    &.bp-xl-2-3 { width: $two-third-no-gutter; }
-    &.bp-xl-3-5 { width: $three-fifth-no-gutter; }
-    &.bp-xl-2 { width: $half-no-gutter; }
-    &.bp-xl-2-5 { width: $two-fifth-no-gutter; }
-    &.bp-xl-3 { width: $third-no-gutter; }
-    &.bp-xl-4 { width: $quarter-no-gutter; }
-    &.bp-xl-5 { width: $fifth-no-gutter; }
+    &.bp-xl-100 { width: $full-no-gutter; }
+    &.bp-xl-80 { width: $four-fifth-no-gutter; }
+    &.bp-xl-75 { width: $three-quarter-no-gutter; }
+    &.bp-xl-66 { width: $two-third-no-gutter; }
+    &.bp-xl-60 { width: $three-fifth-no-gutter; }
+    &.bp-xl-50 { width: $half-no-gutter; }
+    &.bp-xl-40 { width: $two-fifth-no-gutter; }
+    &.bp-xl-33 { width: $third-no-gutter; }
+    &.bp-xl-25 { width: $quarter-no-gutter; }
+    &.bp-xl-20 { width: $fifth-no-gutter; }
   }
 }
 
 // XXL Breakpoint
 @media (min-width: $breakpoint-xxl) {
-  .bp-xxl-1 { width: $full; }
-  .bp-xxl-4-5 { width: $four-fifth; }
-  .bp-xxl-3-4 { width: $three-quarter; }
-  .bp-xxl-2-3 { width: $two-third; }
-  .bp-xxl-3-5 { width: $three-fifth; }
-  .bp-xxl-2 { width: $half; }
-  .bp-xxl-2-5 { width: $two-fifth; }
-  .bp-xxl-3 { width: $third; }
-  .bp-xxl-4 { width: $quarter; }
-  .bp-xxl-5 { width: $fifth; }
+  .bp-xxl-100 { width: $full; }
+  .bp-xxl-80 { width: $four-fifth; }
+  .bp-xxl-75 { width: $three-quarter; }
+  .bp-xxl-66 { width: $two-third; }
+  .bp-xxl-60 { width: $three-fifth; }
+  .bp-xxl-50 { width: $half; }
+  .bp-xxl-40 { width: $two-fifth; }
+  .bp-xxl-33 { width: $third; }
+  .bp-xxl-25 { width: $quarter; }
+  .bp-xxl-20 { width: $fifth; }
 
   // no-gutter scoped breakpoint
   .no-gutter {
-    &.bp-xxl-1 { width: $full-no-gutter; }
-    &.bp-xxl-4-5 { width: $four-fifth-no-gutter; }
-    &.bp-xxl-3-4 { width: $three-quarter-no-gutter; }
-    &.bp-xxl-2-3 { width: $two-third-no-gutter; }
-    &.bp-xxl-3-5 { width: $three-fifth-no-gutter; }
-    &.bp-xxl-2 { width: $half-no-gutter; }
-    &.bp-xxl-2-5 { width: $two-fifth-no-gutter; }
-    &.bp-xxl-3 { width: $third-no-gutter; }
-    &.bp-xxl-4 { width: $quarter-no-gutter; }
-    &.bp-xxl-5 { width: $fifth-no-gutter; }
+    &.bp-xxl-100 { width: $full-no-gutter; }
+    &.bp-xxl-80 { width: $four-fifth-no-gutter; }
+    &.bp-xxl-75 { width: $three-quarter-no-gutter; }
+    &.bp-xxl-66 { width: $two-third-no-gutter; }
+    &.bp-xxl-60 { width: $three-fifth-no-gutter; }
+    &.bp-xxl-50 { width: $half-no-gutter; }
+    &.bp-xxl-40 { width: $two-fifth-no-gutter; }
+    &.bp-xxl-33 { width: $third-no-gutter; }
+    &.bp-xxl-25 { width: $quarter-no-gutter; }
+    &.bp-xxl-20 { width: $fifth-no-gutter; }
   }
 }

@@ -2,11 +2,19 @@
 // Peachy Debugging
 // ===============================
 
+/* Colors */
+$peach: #FF8B53;
+$light-peach: #FFEBBB;
+$green: #7FDE66;
+$white: #ffffff;
+$column-color: #efefef;
+$nested-column-color: #d6d6d6;
+
 .debug {
   [class*="col-"] {
     // Change the background color of Nested Columns
     [class*="col-"] {
-      background: $light-peach;
+      background-color: $light-peach;
       color: $white;
     }
 
@@ -21,7 +29,7 @@
       left: 0;
       padding: 5px;
       color: $white;
-      background: $peach;
+      background-color: $peach;
       opacity: 0.5;
       clear: both;
       transition: opacity 0.3s;
@@ -31,7 +39,7 @@
   // Display a dashed border around the invisible space columns
   .col-space {
     visibility: visible;
-    background: transparent;
+    background-color: transparent;
     border: 3px dashed $peach;
   }
 
